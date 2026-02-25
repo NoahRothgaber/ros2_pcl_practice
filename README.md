@@ -1,2 +1,1 @@
-# ros2_pcl_practice
-# ros2_pcl_practice
+This repo is for practicing with the PCL libraries functionality and cross over with the PCL Lib
