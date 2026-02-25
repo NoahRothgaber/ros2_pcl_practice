@@ -1,0 +1,6 @@
+Filtering a PointCloud using a PassThrough filter
+Downsampling a PointCloud using a VoxelGrid filter
+Removing outliers using a StatisticalOutlierRemoval filter
+Projecting points using a parametric model
+Extracting indices from a PointCloud
+Removing outliers using a Conditional or RadiusOutlier removal
