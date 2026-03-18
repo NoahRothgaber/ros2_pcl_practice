@@ -8,6 +8,7 @@ endif()
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(sensor_msgs REQUIRED)
+find_package(geometry_msgs REQUIRED)
 find_package(std_srvs REQUIRED)
 
 find_package(PCL REQUIRED COMPONENTS common filters io)
@@ -17,6 +18,7 @@ add_executable(pointcloud_subscriber src/save_pointcloud_subscriber.cpp)
 add_executable(pointcloud_server     src/save_pointcloud_server.cpp)
 add_executable(pointcloud_client     src/save_pointcloud_client.cpp)
 add_executable(pointcloud_publisher  src/point_cloud_publisher.cpp)
+add_executable(center_point_subscriber src/center_point_subscriber.cpp)
 
 # -------- pointcloud_subscriber --------
 ament_target_dependencies(pointcloud_subscriber
@@ -55,11 +57,23 @@ target_include_directories(pointcloud_publisher PRIVATE ${PCL_INCLUDE_DIRS})
 target_link_libraries(pointcloud_publisher ${PCL_LIBRARIES})
 target_compile_definitions(pointcloud_publisher PRIVATE ${PCL_DEFINITIONS})
 
+# -------- center_point_subscriber --------
+ament_target_dependencies(center_point_subscriber
+  rclcpp
+  geometry_msgs
+  sensor_msgs
+  pcl_conversions
+)
+target_include_directories(center_point_subscriber PRIVATE ${PCL_INCLUDE_DIRS})
+target_link_libraries(center_point_subscriber ${PCL_LIBRARIES})
+target_compile_definitions(center_point_subscriber PRIVATE ${PCL_DEFINITIONS})
+
 install(TARGETS
   pointcloud_subscriber
   pointcloud_server
   pointcloud_client
   pointcloud_publisher
+  center_point_subscriber
   DESTINATION lib/${PROJECT_NAME}
 )
 
