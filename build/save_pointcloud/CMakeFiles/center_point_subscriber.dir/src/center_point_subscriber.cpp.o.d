@@ -691,6 +691,16 @@ CMakeFiles/center_point_subscriber.dir/src/center_point_subscriber.cpp.o: \
  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/point__traits.hpp \
  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/point__type_support.hpp \
  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
+ /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/point_cloud2.hpp \
+ /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/point_cloud2__struct.hpp \
+ /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/header__struct.hpp \
+ /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/point_field__struct.hpp \
+ /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/point_cloud2__builder.hpp \
+ /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/point_cloud2__traits.hpp \
+ /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/header__traits.hpp \
+ /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/point_field__traits.hpp \
+ /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/point_cloud2__type_support.hpp \
+ /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
  /usr/include/pcl-1.14/pcl/io/pcd_io.h /usr/include/pcl-1.14/pcl/memory.h \
  /usr/include/pcl-1.14/pcl/type_traits.h \
  /usr/include/pcl-1.14/pcl/point_struct_traits.h \
@@ -1458,6 +1468,43 @@ CMakeFiles/center_point_subscriber.dir/src/center_point_subscriber.cpp.o: \
  /usr/include/flann/util/params.h /usr/include/flann/util/any.h \
  /usr/include/flann/general.h /usr/include/flann/defines.h \
  /usr/include/flann/config.h \
+ /opt/ros/jazzy/include/pcl_conversions/pcl_conversions/pcl_conversions.h \
+ /opt/ros/jazzy/include/message_filters/message_filters/message_event.h \
+ /opt/ros/jazzy/include/message_filters/message_filters/message_traits.h \
+ /opt/ros/jazzy/include/std_msgs/std_msgs/msg/header.hpp \
+ /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/header__builder.hpp \
+ /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/header__type_support.hpp \
+ /opt/ros/jazzy/include/std_msgs/std_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
+ /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/image.hpp \
+ /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/image__struct.hpp \
+ /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/image__builder.hpp \
+ /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/image__traits.hpp \
+ /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/image__type_support.hpp \
+ /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/point_field.hpp \
+ /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/point_field__builder.hpp \
+ /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/point_field__type_support.hpp \
+ /opt/ros/jazzy/include/pcl_msgs/pcl_msgs/msg/point_indices.hpp \
+ /opt/ros/jazzy/include/pcl_msgs/pcl_msgs/msg/detail/point_indices__struct.hpp \
+ /opt/ros/jazzy/include/pcl_msgs/pcl_msgs/msg/detail/point_indices__builder.hpp \
+ /opt/ros/jazzy/include/pcl_msgs/pcl_msgs/msg/detail/point_indices__traits.hpp \
+ /opt/ros/jazzy/include/pcl_msgs/pcl_msgs/msg/detail/point_indices__type_support.hpp \
+ /opt/ros/jazzy/include/pcl_msgs/pcl_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
+ /usr/include/pcl-1.14/pcl/ModelCoefficients.h \
+ /opt/ros/jazzy/include/pcl_msgs/pcl_msgs/msg/model_coefficients.hpp \
+ /opt/ros/jazzy/include/pcl_msgs/pcl_msgs/msg/detail/model_coefficients__struct.hpp \
+ /opt/ros/jazzy/include/pcl_msgs/pcl_msgs/msg/detail/model_coefficients__builder.hpp \
+ /opt/ros/jazzy/include/pcl_msgs/pcl_msgs/msg/detail/model_coefficients__traits.hpp \
+ /opt/ros/jazzy/include/pcl_msgs/pcl_msgs/msg/detail/model_coefficients__type_support.hpp \
+ /opt/ros/jazzy/include/pcl_msgs/pcl_msgs/msg/vertices.hpp \
+ /opt/ros/jazzy/include/pcl_msgs/pcl_msgs/msg/detail/vertices__struct.hpp \
+ /opt/ros/jazzy/include/pcl_msgs/pcl_msgs/msg/detail/vertices__builder.hpp \
+ /opt/ros/jazzy/include/pcl_msgs/pcl_msgs/msg/detail/vertices__traits.hpp \
+ /opt/ros/jazzy/include/pcl_msgs/pcl_msgs/msg/detail/vertices__type_support.hpp \
+ /opt/ros/jazzy/include/pcl_msgs/pcl_msgs/msg/polygon_mesh.hpp \
+ /opt/ros/jazzy/include/pcl_msgs/pcl_msgs/msg/detail/polygon_mesh__struct.hpp \
+ /opt/ros/jazzy/include/pcl_msgs/pcl_msgs/msg/detail/polygon_mesh__builder.hpp \
+ /opt/ros/jazzy/include/pcl_msgs/pcl_msgs/msg/detail/polygon_mesh__traits.hpp \
+ /opt/ros/jazzy/include/pcl_msgs/pcl_msgs/msg/detail/polygon_mesh__type_support.hpp \
  /home/csrobot/ros2_ws/src/save_pointcloud/build/save_pointcloud/rosidl_generator_cpp/save_pointcloud/msg/bounding_box_center.hpp \
  /home/csrobot/ros2_ws/src/save_pointcloud/build/save_pointcloud/rosidl_generator_cpp/save_pointcloud/msg/detail/bounding_box_center__struct.hpp \
  /home/csrobot/ros2_ws/src/save_pointcloud/build/save_pointcloud/rosidl_generator_cpp/save_pointcloud/msg/detail/bounding_box_center__builder.hpp \
