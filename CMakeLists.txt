@@ -10,6 +10,8 @@ find_package(rclcpp REQUIRED)
 find_package(sensor_msgs REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(std_srvs REQUIRED)
+find_package(cv_bridge REQUIRED)
+find_package(OpenCV REQUIRED)
 
 find_package(PCL REQUIRED COMPONENTS common filters io)
 find_package(pcl_conversions REQUIRED)
@@ -36,9 +38,10 @@ ament_target_dependencies(pointcloud_server
   sensor_msgs
   std_srvs
   pcl_conversions
+
 )
 target_include_directories(pointcloud_server PRIVATE ${PCL_INCLUDE_DIRS})
-target_link_libraries(pointcloud_server ${PCL_LIBRARIES})
+target_link_libraries(pointcloud_server ${PCL_LIBRARIES} ${OpenCV_LIBS})
 target_compile_definitions(pointcloud_server PRIVATE ${PCL_DEFINITIONS})
 
 # -------- pointcloud_client --------
@@ -64,6 +67,7 @@ ament_target_dependencies(center_point_subscriber
   sensor_msgs
   pcl_conversions
 )
+
 target_include_directories(center_point_subscriber PRIVATE ${PCL_INCLUDE_DIRS})
 target_link_libraries(center_point_subscriber ${PCL_LIBRARIES})
 target_compile_definitions(center_point_subscriber PRIVATE ${PCL_DEFINITIONS})
@@ -74,6 +78,11 @@ install(TARGETS
   pointcloud_client
   pointcloud_publisher
   center_point_subscriber
+  DESTINATION lib/${PROJECT_NAME}
+)
+
+install(PROGRAMS
+  scripts/center_point_publisher.py
   DESTINATION lib/${PROJECT_NAME}
 )
 
