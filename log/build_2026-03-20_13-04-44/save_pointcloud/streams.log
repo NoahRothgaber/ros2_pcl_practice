@@ -1,0 +1,286 @@
+[0.009s] Invoking command in '/home/csrobot/ros2_ws/src/save_pointcloud/build/save_pointcloud': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/csrobot/ros2_ws/src/save_pointcloud -DCMAKE_INSTALL_PREFIX=/home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud
+[0.018s] -- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.205s] -- Found rclcpp: 28.1.16 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.221s] -- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.226s] -- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.232s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.240s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.277s] -- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.278s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[0.323s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.371s] -- Found sensor_msgs: 5.3.6 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+[0.404s] -- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[0.409s] -- Found rosidl_adapter: 4.6.7 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[0.410s] -- Found std_srvs: 5.3.6 (/opt/ros/jazzy/share/std_srvs/cmake)
+[0.420s] -- Found cv_bridge: 4.1.0 (/opt/ros/jazzy/share/cv_bridge/cmake)
+[0.440s] [33mCMake Warning (dev) at /usr/lib/x86_64-linux-gnu/cmake/pcl/Modules/FindFLANN.cmake:45 (find_package):
+[0.441s]   Policy CMP0144 is not set: find_package uses upper-case <PACKAGENAME>_ROOT
+[0.441s]   variables.  Run "cmake --help-policy CMP0144" for policy details.  Use the
+[0.441s]   cmake_policy command to set the policy and suppress this warning.
+[0.441s] 
+[0.441s]   CMake variable FLANN_ROOT is set to:
+[0.441s] 
+[0.441s]     /usr
+[0.441s] 
+[0.441s]   For compatibility, find_package is ignoring the variable, but code in a
+[0.441s]   .cmake module might still use it.
+[0.441s] Call Stack (most recent call first):
+[0.441s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:261 (find_package)
+[0.441s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:306 (find_flann)
+[0.441s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:570 (find_external_library)
+[0.441s]   CMakeLists.txt:17 (find_package)
+[0.441s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[0.441s] [0m
+[0.441s] -- Found flann version 1.9.2
+[0.452s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[0.462s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[0.465s] -- Could NOT find Pcap (missing: PCAP_LIBRARIES PCAP_INCLUDE_DIRS) 
+[0.466s] [0m** WARNING ** io features related to pcap will be disabled[0m
+[0.767s] -- looking for PCL_COMMON
+[0.767s] -- looking for PCL_KDTREE
+[0.767s] -- looking for PCL_OCTREE
+[0.768s] -- looking for PCL_SEARCH
+[0.768s] -- looking for PCL_SAMPLE_CONSENSUS
+[0.768s] -- looking for PCL_FILTERS
+[0.768s] -- looking for PCL_IO
+[0.769s] -- Found pcl_conversions: 2.6.2 (/opt/ros/jazzy/share/pcl_conversions/cmake)
+[1.270s] -- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)
+[1.882s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.117s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.119s] -- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)
+[2.233s] -- Found PythonExtra: /usr/bin/python3  
+[2.541s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed 
+[2.606s] -- Configuring done (2.6s)
+[2.673s] -- Generating done (0.0s)
+[2.686s] -- Build files have been written to: /home/csrobot/ros2_ws/src/save_pointcloud/build/save_pointcloud
+[2.698s] Invoked command in '/home/csrobot/ros2_ws/src/save_pointcloud/build/save_pointcloud' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/csrobot/ros2_ws/src/save_pointcloud -DCMAKE_INSTALL_PREFIX=/home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud
+[2.698s] Invoking command in '/home/csrobot/ros2_ws/src/save_pointcloud/build/save_pointcloud': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/csrobot/ros2_ws/src/save_pointcloud/build/save_pointcloud -- -j16 -l16
+[2.752s] [  2%] [32mBuilding CXX object CMakeFiles/center_point_subscriber.dir/src/center_point_subscriber.cpp.o[0m
+[2.753s] [  4%] [32mBuilding CXX object CMakeFiles/pointcloud_subscriber.dir/src/save_pointcloud_subscriber.cpp.o[0m
+[2.756s] [  6%] [32mBuilding CXX object CMakeFiles/pointcloud_server.dir/src/save_pointcloud_server.cpp.o[0m
+[2.760s] [  9%] [32mBuilding CXX object CMakeFiles/pointcloud_client.dir/src/save_pointcloud_client.cpp.o[0m
+[2.762s] [ 11%] [32mBuilding CXX object CMakeFiles/pointcloud_publisher.dir/src/point_cloud_publisher.cpp.o[0m
+[2.766s] [ 13%] [34m[1mGenerating type hashes for ROS interfaces[0m
+[2.768s] [ 13%] Built target ament_cmake_python_copy_save_pointcloud
+[2.934s] [ 13%] Built target save_pointcloud__rosidl_generator_type_description
+[2.941s] [ 15%] [34m[1mGenerating C code for ROS interfaces[0m
+[2.949s] running egg_info
+[2.950s] creating save_pointcloud.egg-info
+[2.954s] [ 18%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[2.971s] writing save_pointcloud.egg-info/PKG-INFO
+[2.971s] writing dependency_links to save_pointcloud.egg-info/dependency_links.txt
+[2.972s] writing top-level names to save_pointcloud.egg-info/top_level.txt
+[2.972s] writing manifest file 'save_pointcloud.egg-info/SOURCES.txt'
+[3.020s] reading manifest file 'save_pointcloud.egg-info/SOURCES.txt'
+[3.020s] writing manifest file 'save_pointcloud.egg-info/SOURCES.txt'
+[3.057s] [ 18%] Built target ament_cmake_python_build_save_pointcloud_egg
+[3.124s] [ 20%] [32mBuilding C object CMakeFiles/save_pointcloud__rosidl_generator_c.dir/rosidl_generator_c/save_pointcloud/msg/detail/bounding_box_center__description.c.o[0m
+[3.126s] [ 25%] [32mBuilding C object CMakeFiles/save_pointcloud__rosidl_generator_c.dir/rosidl_generator_c/save_pointcloud/msg/detail/bounding_box_center__type_support.c.o[0m
+[3.127s] [ 25%] [32mBuilding C object CMakeFiles/save_pointcloud__rosidl_generator_c.dir/rosidl_generator_c/save_pointcloud/msg/detail/bounding_box_center__functions.c.o[0m
+[3.160s] [ 25%] Built target save_pointcloud__cpp
+[3.166s] [ 27%] [32m[1mLinking C shared library libsave_pointcloud__rosidl_generator_c.so[0m
+[3.199s] [ 27%] Built target save_pointcloud__rosidl_generator_c
+[3.206s] [ 29%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[3.206s] [ 34%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[3.207s] [ 34%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[3.207s] [ 36%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[3.210s] [ 38%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[3.211s] [ 40%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[3.373s] [ 43%] [32mBuilding CXX object CMakeFiles/save_pointcloud__rosidl_typesupport_c.dir/rosidl_typesupport_c/save_pointcloud/msg/bounding_box_center__type_support.cpp.o[0m
+[3.383s] [ 45%] [32mBuilding CXX object CMakeFiles/save_pointcloud__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/save_pointcloud/msg/bounding_box_center__type_support.cpp.o[0m
+[3.393s] [ 47%] [32mBuilding CXX object CMakeFiles/save_pointcloud__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/save_pointcloud/msg/detail/dds_fastrtps/bounding_box_center__type_support.cpp.o[0m
+[3.411s] [ 50%] [32m[1mLinking CXX shared library libsave_pointcloud__rosidl_typesupport_c.so[0m
+[3.441s] [ 52%] [32mBuilding CXX object CMakeFiles/save_pointcloud__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/save_pointcloud/msg/detail/bounding_box_center__type_support_c.cpp.o[0m
+[3.443s] [ 52%] Built target save_pointcloud__rosidl_typesupport_c
+[3.460s] [ 54%] [32mBuilding CXX object CMakeFiles/save_pointcloud__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/save_pointcloud/msg/detail/bounding_box_center__type_support.cpp.o[0m
+[3.467s] [ 56%] [32mBuilding C object CMakeFiles/save_pointcloud__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/save_pointcloud/msg/detail/bounding_box_center__type_support.c.o[0m
+[3.490s] [ 59%] [32m[1mLinking C shared library libsave_pointcloud__rosidl_typesupport_introspection_c.so[0m
+[3.510s] [ 59%] Built target save_pointcloud__rosidl_typesupport_introspection_c
+[3.565s] [ 61%] [32m[1mLinking CXX shared library libsave_pointcloud__rosidl_typesupport_cpp.so[0m
+[3.603s] [ 61%] Built target save_pointcloud__rosidl_typesupport_cpp
+[3.663s] [ 63%] [32m[1mLinking CXX shared library libsave_pointcloud__rosidl_typesupport_fastrtps_cpp.so[0m
+[3.697s] [ 63%] Built target save_pointcloud__rosidl_typesupport_fastrtps_cpp
+[3.724s] [ 65%] [32m[1mLinking CXX shared library libsave_pointcloud__rosidl_typesupport_fastrtps_c.so[0m
+[3.739s] [ 68%] [32m[1mLinking CXX shared library libsave_pointcloud__rosidl_typesupport_introspection_cpp.so[0m
+[3.758s] [ 68%] Built target save_pointcloud__rosidl_typesupport_fastrtps_c
+[3.787s] [ 68%] Built target save_pointcloud__rosidl_typesupport_introspection_cpp
+[3.805s] [ 68%] Built target save_pointcloud
+[3.823s] [ 70%] [34m[1mGenerating Python code for ROS interfaces[0m
+[4.041s] [ 70%] Built target save_pointcloud__py
+[4.057s] [ 72%] [32mBuilding C object CMakeFiles/save_pointcloud__rosidl_generator_py.dir/rosidl_generator_py/save_pointcloud/msg/_bounding_box_center_s.c.o[0m
+[4.128s] [ 75%] [32m[1mLinking C shared library libsave_pointcloud__rosidl_generator_py.so[0m
+[4.160s] [ 75%] Built target save_pointcloud__rosidl_generator_py
+[4.174s] [ 77%] [32mBuilding C object CMakeFiles/save_pointcloud_s__rosidl_typesupport_c.dir/rosidl_generator_py/save_pointcloud/_save_pointcloud_s.ep.rosidl_typesupport_c.c.o[0m
+[4.178s] [ 79%] [32mBuilding C object CMakeFiles/save_pointcloud_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/save_pointcloud/_save_pointcloud_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[4.178s] [ 81%] [32mBuilding C object CMakeFiles/save_pointcloud_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/save_pointcloud/_save_pointcloud_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[4.240s] [ 84%] [32m[1mLinking C shared module rosidl_generator_py/save_pointcloud/save_pointcloud_s__rosidl_typesupport_introspection_c.so[0m
+[4.240s] [ 86%] [32m[1mLinking C shared module rosidl_generator_py/save_pointcloud/save_pointcloud_s__rosidl_typesupport_fastrtps_c.so[0m
+[4.260s] [ 86%] Built target save_pointcloud_s__rosidl_typesupport_fastrtps_c
+[4.262s] [ 86%] Built target save_pointcloud_s__rosidl_typesupport_introspection_c
+[4.269s] [ 88%] [32m[1mLinking C shared module rosidl_generator_py/save_pointcloud/save_pointcloud_s__rosidl_typesupport_c.so[0m
+[4.295s] [ 88%] Built target save_pointcloud_s__rosidl_typesupport_c
+[5.070s] [ 90%] [32m[1mLinking CXX executable pointcloud_client[0m
+[5.160s] [ 90%] Built target pointcloud_client
+[6.131s] [01m[K/home/csrobot/ros2_ws/src/save_pointcloud/src/save_pointcloud_server.cpp:[m[K In member function ‘[01m[Kvoid SavePointCloudServer::[01;32m[Ksave_pointcloud[m[K(std::shared_ptr<std_srvs::srv::Empty_Request_<std::allocator<void> > >, std::shared_ptr<std_srvs::srv::Empty_Response_<std::allocator<void> > >)[m[K’:
+[6.131s] [01m[K/home/csrobot/ros2_ws/src/save_pointcloud/src/save_pointcloud_server.cpp:27:79:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Krequest[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[6.131s]    27 |     void save_pointcloud([01;35m[Kconst std::shared_ptr<std_srvs::srv::Empty::Request> request[m[K,
+[6.132s]       |                          [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~[m[K
+[6.132s] [01m[K/home/csrobot/ros2_ws/src/save_pointcloud/src/save_pointcloud_server.cpp:28:57:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kresponse[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[6.132s]    28 |         [01;35m[Kstd::shared_ptr<std_srvs::srv::Empty::Response> response[m[K)
+[6.132s]       |         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[7.967s] [ 93%] [32m[1mLinking CXX executable pointcloud_publisher[0m
+[8.405s] [ 93%] Built target pointcloud_publisher
+[8.877s] [ 95%] [32m[1mLinking CXX executable center_point_subscriber[0m
+[9.248s] [ 95%] Built target center_point_subscriber
+[9.356s] [ 97%] [32m[1mLinking CXX executable pointcloud_subscriber[0m
+[9.805s] [ 97%] Built target pointcloud_subscriber
+[12.085s] [100%] [32m[1mLinking CXX executable pointcloud_server[0m
+[12.754s] [100%] Built target pointcloud_server
+[12.764s] Invoked command in '/home/csrobot/ros2_ws/src/save_pointcloud/build/save_pointcloud' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/csrobot/ros2_ws/src/save_pointcloud/build/save_pointcloud -- -j16 -l16
+[12.772s] Invoking command in '/home/csrobot/ros2_ws/src/save_pointcloud/build/save_pointcloud': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/csrobot/ros2_ws/src/save_pointcloud/build/save_pointcloud
+[12.781s] -- Install configuration: ""
+[12.781s] -- Installing: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/share/ament_index/resource_index/rosidl_interfaces/save_pointcloud
+[12.781s] -- Installing: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/share/save_pointcloud/msg/BoundingBoxCenter.json
+[12.782s] -- Installing: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/include/save_pointcloud/save_pointcloud
+[12.782s] -- Installing: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/include/save_pointcloud/save_pointcloud/msg
+[12.782s] -- Installing: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/include/save_pointcloud/save_pointcloud/msg/detail
+[12.782s] -- Installing: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/include/save_pointcloud/save_pointcloud/msg/detail/bounding_box_center__struct.h
+[12.782s] -- Installing: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/include/save_pointcloud/save_pointcloud/msg/detail/bounding_box_center__description.c
+[12.782s] -- Installing: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/include/save_pointcloud/save_pointcloud/msg/detail/bounding_box_center__type_support.c
+[12.782s] -- Installing: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/include/save_pointcloud/save_pointcloud/msg/detail/bounding_box_center__type_support.h
+[12.782s] -- Installing: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/include/save_pointcloud/save_pointcloud/msg/detail/bounding_box_center__functions.c
+[12.782s] -- Installing: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/include/save_pointcloud/save_pointcloud/msg/detail/bounding_box_center__functions.h
+[12.782s] -- Installing: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/include/save_pointcloud/save_pointcloud/msg/bounding_box_center.h
+[12.782s] -- Installing: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/include/save_pointcloud/save_pointcloud/msg/rosidl_generator_c__visibility_control.h
+[12.782s] -- Installing: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/share/save_pointcloud/environment/library_path.sh
+[12.782s] -- Installing: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/share/save_pointcloud/environment/library_path.dsv
+[12.782s] -- Installing: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/lib/libsave_pointcloud__rosidl_generator_c.so
+[12.782s] -- Set non-toolchain portion of runtime path of "/home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/lib/libsave_pointcloud__rosidl_generator_c.so" to ""
+[12.782s] -- Up-to-date: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/include/save_pointcloud/save_pointcloud
+[12.783s] -- Up-to-date: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/include/save_pointcloud/save_pointcloud/msg
+[12.783s] -- Up-to-date: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/include/save_pointcloud/save_pointcloud/msg/detail
+[12.783s] -- Installing: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/include/save_pointcloud/save_pointcloud/msg/detail/bounding_box_center__rosidl_typesupport_fastrtps_c.h
+[12.783s] -- Installing: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/include/save_pointcloud/save_pointcloud/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[12.783s] -- Installing: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/lib/libsave_pointcloud__rosidl_typesupport_fastrtps_c.so
+[12.783s] -- Set non-toolchain portion of runtime path of "/home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/lib/libsave_pointcloud__rosidl_typesupport_fastrtps_c.so" to ""
+[12.783s] -- Up-to-date: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/include/save_pointcloud/save_pointcloud
+[12.783s] -- Up-to-date: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/include/save_pointcloud/save_pointcloud/msg
+[12.783s] -- Up-to-date: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/include/save_pointcloud/save_pointcloud/msg/detail
+[12.783s] -- Installing: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/include/save_pointcloud/save_pointcloud/msg/detail/bounding_box_center__struct.hpp
+[12.783s] -- Installing: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/include/save_pointcloud/save_pointcloud/msg/detail/bounding_box_center__type_support.hpp
+[12.783s] -- Installing: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/include/save_pointcloud/save_pointcloud/msg/detail/bounding_box_center__builder.hpp
+[12.783s] -- Installing: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/include/save_pointcloud/save_pointcloud/msg/detail/bounding_box_center__traits.hpp
+[12.783s] -- Installing: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/include/save_pointcloud/save_pointcloud/msg/bounding_box_center.hpp
+[12.783s] -- Installing: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/include/save_pointcloud/save_pointcloud/msg/rosidl_generator_cpp__visibility_control.hpp
+[12.783s] -- Up-to-date: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/include/save_pointcloud/save_pointcloud
+[12.783s] -- Up-to-date: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/include/save_pointcloud/save_pointcloud/msg
+[12.784s] -- Up-to-date: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/include/save_pointcloud/save_pointcloud/msg/detail
+[12.784s] -- Installing: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/include/save_pointcloud/save_pointcloud/msg/detail/dds_fastrtps
+[12.784s] -- Installing: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/include/save_pointcloud/save_pointcloud/msg/detail/bounding_box_center__rosidl_typesupport_fastrtps_cpp.hpp
+[12.784s] -- Installing: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/include/save_pointcloud/save_pointcloud/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[12.784s] -- Installing: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/lib/libsave_pointcloud__rosidl_typesupport_fastrtps_cpp.so
+[12.784s] -- Set non-toolchain portion of runtime path of "/home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/lib/libsave_pointcloud__rosidl_typesupport_fastrtps_cpp.so" to ""
+[12.784s] -- Up-to-date: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/include/save_pointcloud/save_pointcloud
+[12.784s] -- Up-to-date: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/include/save_pointcloud/save_pointcloud/msg
+[12.784s] -- Up-to-date: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/include/save_pointcloud/save_pointcloud/msg/detail
+[12.784s] -- Installing: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/include/save_pointcloud/save_pointcloud/msg/detail/bounding_box_center__rosidl_typesupport_introspection_c.h
+[12.784s] -- Up-to-date: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/include/save_pointcloud/save_pointcloud/msg/detail/bounding_box_center__type_support.c
+[12.784s] -- Installing: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/include/save_pointcloud/save_pointcloud/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[12.784s] -- Installing: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/lib/libsave_pointcloud__rosidl_typesupport_introspection_c.so
+[12.784s] -- Set non-toolchain portion of runtime path of "/home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/lib/libsave_pointcloud__rosidl_typesupport_introspection_c.so" to ""
+[12.784s] -- Installing: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/lib/libsave_pointcloud__rosidl_typesupport_c.so
+[12.784s] -- Set non-toolchain portion of runtime path of "/home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/lib/libsave_pointcloud__rosidl_typesupport_c.so" to ""
+[12.784s] -- Up-to-date: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/include/save_pointcloud/save_pointcloud
+[12.785s] -- Up-to-date: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/include/save_pointcloud/save_pointcloud/msg
+[12.785s] -- Up-to-date: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/include/save_pointcloud/save_pointcloud/msg/detail
+[12.785s] -- Installing: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/include/save_pointcloud/save_pointcloud/msg/detail/bounding_box_center__rosidl_typesupport_introspection_cpp.hpp
+[12.785s] -- Installing: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/include/save_pointcloud/save_pointcloud/msg/detail/bounding_box_center__type_support.cpp
+[12.785s] -- Installing: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/lib/libsave_pointcloud__rosidl_typesupport_introspection_cpp.so
+[12.785s] -- Set non-toolchain portion of runtime path of "/home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/lib/libsave_pointcloud__rosidl_typesupport_introspection_cpp.so" to ""
+[12.785s] -- Installing: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/lib/libsave_pointcloud__rosidl_typesupport_cpp.so
+[12.785s] -- Set non-toolchain portion of runtime path of "/home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/lib/libsave_pointcloud__rosidl_typesupport_cpp.so" to ""
+[12.785s] -- Installing: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/share/save_pointcloud/environment/pythonpath.sh
+[12.785s] -- Installing: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/share/save_pointcloud/environment/pythonpath.dsv
+[12.785s] -- Installing: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/lib/python3.12/site-packages/save_pointcloud-0.0.0-py3.12.egg-info
+[12.785s] -- Installing: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/lib/python3.12/site-packages/save_pointcloud-0.0.0-py3.12.egg-info/dependency_links.txt
+[12.785s] -- Installing: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/lib/python3.12/site-packages/save_pointcloud-0.0.0-py3.12.egg-info/SOURCES.txt
+[12.785s] -- Installing: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/lib/python3.12/site-packages/save_pointcloud-0.0.0-py3.12.egg-info/top_level.txt
+[12.785s] -- Installing: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/lib/python3.12/site-packages/save_pointcloud-0.0.0-py3.12.egg-info/PKG-INFO
+[12.786s] -- Installing: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/lib/python3.12/site-packages/save_pointcloud
+[12.786s] -- Installing: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/lib/python3.12/site-packages/save_pointcloud/save_pointcloud_s__rosidl_typesupport_introspection_c.so
+[12.786s] -- Installing: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/lib/python3.12/site-packages/save_pointcloud/_save_pointcloud_s.ep.rosidl_typesupport_introspection_c.c
+[12.786s] -- Installing: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/lib/python3.12/site-packages/save_pointcloud/_save_pointcloud_s.ep.rosidl_typesupport_c.c
+[12.786s] -- Installing: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/lib/python3.12/site-packages/save_pointcloud/msg
+[12.786s] -- Installing: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/lib/python3.12/site-packages/save_pointcloud/msg/__init__.py
+[12.786s] -- Installing: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/lib/python3.12/site-packages/save_pointcloud/msg/_bounding_box_center.py
+[12.786s] -- Installing: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/lib/python3.12/site-packages/save_pointcloud/msg/_bounding_box_center_s.c
+[12.786s] -- Installing: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/lib/python3.12/site-packages/save_pointcloud/save_pointcloud_s__rosidl_typesupport_c.so
+[12.786s] -- Installing: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/lib/python3.12/site-packages/save_pointcloud/_save_pointcloud_s.ep.rosidl_typesupport_fastrtps_c.c
+[12.786s] -- Installing: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/lib/python3.12/site-packages/save_pointcloud/save_pointcloud_s__rosidl_typesupport_fastrtps_c.so
+[12.786s] -- Installing: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/lib/python3.12/site-packages/save_pointcloud/__init__.py
+[12.815s] Listing '/home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/lib/python3.12/site-packages/save_pointcloud'...
+[12.815s] Compiling '/home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/lib/python3.12/site-packages/save_pointcloud/__init__.py'...
+[12.815s] Listing '/home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/lib/python3.12/site-packages/save_pointcloud/msg'...
+[12.815s] Compiling '/home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/lib/python3.12/site-packages/save_pointcloud/msg/__init__.py'...
+[12.815s] Compiling '/home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/lib/python3.12/site-packages/save_pointcloud/msg/_bounding_box_center.py'...
+[12.819s] -- Installing: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/lib/python3.12/site-packages/save_pointcloud/save_pointcloud_s__rosidl_typesupport_fastrtps_c.so
+[12.819s] -- Set non-toolchain portion of runtime path of "/home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/lib/python3.12/site-packages/save_pointcloud/save_pointcloud_s__rosidl_typesupport_fastrtps_c.so" to ""
+[12.819s] -- Installing: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/lib/python3.12/site-packages/save_pointcloud/save_pointcloud_s__rosidl_typesupport_introspection_c.so
+[12.819s] -- Set non-toolchain portion of runtime path of "/home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/lib/python3.12/site-packages/save_pointcloud/save_pointcloud_s__rosidl_typesupport_introspection_c.so" to ""
+[12.819s] -- Installing: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/lib/python3.12/site-packages/save_pointcloud/save_pointcloud_s__rosidl_typesupport_c.so
+[12.819s] -- Set non-toolchain portion of runtime path of "/home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/lib/python3.12/site-packages/save_pointcloud/save_pointcloud_s__rosidl_typesupport_c.so" to ""
+[12.819s] -- Installing: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/lib/libsave_pointcloud__rosidl_generator_py.so
+[12.819s] -- Set non-toolchain portion of runtime path of "/home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/lib/libsave_pointcloud__rosidl_generator_py.so" to ""
+[12.819s] -- Installing: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/share/save_pointcloud/msg/BoundingBoxCenter.idl
+[12.819s] -- Installing: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/share/save_pointcloud/msg/BoundingBoxCenter.msg
+[12.819s] -- Installing: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/lib/save_pointcloud/pointcloud_subscriber
+[12.822s] -- Set non-toolchain portion of runtime path of "/home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/lib/save_pointcloud/pointcloud_subscriber" to ""
+[12.822s] -- Installing: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/lib/save_pointcloud/pointcloud_server
+[12.827s] -- Set non-toolchain portion of runtime path of "/home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/lib/save_pointcloud/pointcloud_server" to ""
+[12.827s] -- Installing: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/lib/save_pointcloud/pointcloud_client
+[12.827s] -- Set non-toolchain portion of runtime path of "/home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/lib/save_pointcloud/pointcloud_client" to ""
+[12.827s] -- Installing: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/lib/save_pointcloud/pointcloud_publisher
+[12.828s] -- Set non-toolchain portion of runtime path of "/home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/lib/save_pointcloud/pointcloud_publisher" to ""
+[12.828s] -- Installing: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/lib/save_pointcloud/center_point_subscriber
+[12.831s] -- Set non-toolchain portion of runtime path of "/home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/lib/save_pointcloud/center_point_subscriber" to ""
+[12.831s] -- Installing: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/lib/save_pointcloud/center_point_publisher.py
+[12.831s] -- Installing: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/share/ament_index/resource_index/package_run_dependencies/save_pointcloud
+[12.831s] -- Installing: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/share/ament_index/resource_index/parent_prefix_path/save_pointcloud
+[12.831s] -- Installing: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/share/save_pointcloud/environment/ament_prefix_path.sh
+[12.831s] -- Installing: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/share/save_pointcloud/environment/ament_prefix_path.dsv
+[12.831s] -- Installing: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/share/save_pointcloud/environment/path.sh
+[12.831s] -- Installing: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/share/save_pointcloud/environment/path.dsv
+[12.831s] -- Installing: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/share/save_pointcloud/local_setup.bash
+[12.831s] -- Installing: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/share/save_pointcloud/local_setup.sh
+[12.832s] -- Installing: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/share/save_pointcloud/local_setup.zsh
+[12.832s] -- Installing: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/share/save_pointcloud/local_setup.dsv
+[12.832s] -- Installing: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/share/save_pointcloud/package.dsv
+[12.832s] -- Installing: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/share/ament_index/resource_index/packages/save_pointcloud
+[12.832s] -- Installing: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/share/save_pointcloud/cmake/export_save_pointcloud__rosidl_generator_cExport.cmake
+[12.832s] -- Installing: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/share/save_pointcloud/cmake/export_save_pointcloud__rosidl_generator_cExport-noconfig.cmake
+[12.832s] -- Installing: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/share/save_pointcloud/cmake/export_save_pointcloud__rosidl_typesupport_fastrtps_cExport.cmake
+[12.832s] -- Installing: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/share/save_pointcloud/cmake/export_save_pointcloud__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[12.832s] -- Installing: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/share/save_pointcloud/cmake/export_save_pointcloud__rosidl_generator_cppExport.cmake
+[12.832s] -- Installing: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/share/save_pointcloud/cmake/export_save_pointcloud__rosidl_typesupport_fastrtps_cppExport.cmake
+[12.832s] -- Installing: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/share/save_pointcloud/cmake/export_save_pointcloud__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[12.832s] -- Installing: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/share/save_pointcloud/cmake/save_pointcloud__rosidl_typesupport_introspection_cExport.cmake
+[12.832s] -- Installing: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/share/save_pointcloud/cmake/save_pointcloud__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[12.832s] -- Installing: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/share/save_pointcloud/cmake/save_pointcloud__rosidl_typesupport_cExport.cmake
+[12.832s] -- Installing: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/share/save_pointcloud/cmake/save_pointcloud__rosidl_typesupport_cExport-noconfig.cmake
+[12.832s] -- Installing: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/share/save_pointcloud/cmake/save_pointcloud__rosidl_typesupport_introspection_cppExport.cmake
+[12.832s] -- Installing: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/share/save_pointcloud/cmake/save_pointcloud__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[12.832s] -- Installing: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/share/save_pointcloud/cmake/save_pointcloud__rosidl_typesupport_cppExport.cmake
+[12.832s] -- Installing: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/share/save_pointcloud/cmake/save_pointcloud__rosidl_typesupport_cppExport-noconfig.cmake
+[12.832s] -- Installing: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/share/save_pointcloud/cmake/export_save_pointcloud__rosidl_generator_pyExport.cmake
+[12.832s] -- Installing: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/share/save_pointcloud/cmake/export_save_pointcloud__rosidl_generator_pyExport-noconfig.cmake
+[12.832s] -- Installing: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/share/save_pointcloud/cmake/rosidl_cmake-extras.cmake
+[12.833s] -- Installing: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/share/save_pointcloud/cmake/ament_cmake_export_dependencies-extras.cmake
+[12.833s] -- Installing: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/share/save_pointcloud/cmake/ament_cmake_export_include_directories-extras.cmake
+[12.833s] -- Installing: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/share/save_pointcloud/cmake/ament_cmake_export_libraries-extras.cmake
+[12.833s] -- Installing: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/share/save_pointcloud/cmake/ament_cmake_export_targets-extras.cmake
+[12.833s] -- Installing: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/share/save_pointcloud/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[12.833s] -- Installing: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/share/save_pointcloud/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[12.833s] -- Installing: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/share/save_pointcloud/cmake/save_pointcloudConfig.cmake
+[12.833s] -- Installing: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/share/save_pointcloud/cmake/save_pointcloudConfig-version.cmake
+[12.833s] -- Installing: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/share/save_pointcloud/package.xml
+[12.835s] Invoked command in '/home/csrobot/ros2_ws/src/save_pointcloud/build/save_pointcloud' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/csrobot/ros2_ws/src/save_pointcloud/build/save_pointcloud

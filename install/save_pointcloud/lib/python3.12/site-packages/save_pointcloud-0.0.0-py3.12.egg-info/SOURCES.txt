@@ -1,0 +1,8 @@
+setup.py
+save_pointcloud/__init__.py
+save_pointcloud.egg-info/PKG-INFO
+save_pointcloud.egg-info/SOURCES.txt
+save_pointcloud.egg-info/dependency_links.txt
+save_pointcloud.egg-info/top_level.txt
+save_pointcloud/msg/__init__.py
+save_pointcloud/msg/_bounding_box_center.py

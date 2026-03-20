@@ -1,0 +1,267 @@
+[0.000000] (-) TimerEvent: {}
+[0.000428] (save_pointcloud) JobQueued: {'identifier': 'save_pointcloud', 'dependencies': OrderedDict()}
+[0.000516] (save_pointcloud) JobStarted: {'identifier': 'save_pointcloud'}
+[0.007820] (save_pointcloud) JobProgress: {'identifier': 'save_pointcloud', 'progress': 'cmake'}
+[0.008655] (save_pointcloud) JobProgress: {'identifier': 'save_pointcloud', 'progress': 'build'}
+[0.009356] (save_pointcloud) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/csrobot/ros2_ws/src/save_pointcloud/build/save_pointcloud', '--', '-j16', '-l16'], 'cwd': '/home/csrobot/ros2_ws/src/save_pointcloud/build/save_pointcloud', 'env': OrderedDict({'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'PYTHON_BASIC_REPL': '1', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'csrobot', 'FONTCONFIG_PATH': '/etc/fonts', 'GIO_MODULE_DIR': '/home/csrobot/snap/code/common/.cache/gio-modules', 'XDG_SESSION_TYPE': 'x11', 'GIT_ASKPASS': '/snap/code/230/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'GTK_EXE_PREFIX_VSCODE_SNAP_ORIG': '', 'GDK_BACKEND_VSCODE_SNAP_ORIG': '', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/csrobot', 'CHROME_DESKTOP': 'code.desktop', 'LOCPATH_VSCODE_SNAP_ORIG': '', 'OLDPWD': '/home/csrobot/ros2_ws/src', 'TERM_PROGRAM_VERSION': '1.112.0', 'DESKTOP_SESSION': 'ubuntu', 'GTK_PATH': '/snap/code/230/usr/lib/x86_64-linux-gnu/gtk-3.0', 'XDG_DATA_HOME_VSCODE_SNAP_ORIG': '', 'GTK_IM_MODULE_FILE': '/home/csrobot/snap/code/common/.cache/immodules/immodules.cache', 'GIO_LAUNCHED_DESKTOP_FILE': '/var/lib/snapd/desktop/applications/code_code.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG': '', 'VSCODE_GIT_ASKPASS_MAIN': '/snap/code/230/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/snap/code/230/usr/share/code/code', 'MANAGERPID': '2302', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'SYSTEMD_EXEC_PID': '2679', 'BUNDLED_DEBUGPY_PATH': '/home/csrobot/.vscode/extensions/ms-python.debugpy-2025.18.0-linux-x64/bundled/libs/debugpy', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '14832', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'csrobot', 'JOURNAL_STREAM': '8:26699', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@x11.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'XDG_DATA_DIRS_VSCODE_SNAP_ORIG': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'USERNAME': 'csrobot', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'FC_FONTATIONS': '1', 'WINDOWPATH': '2', 'PATH': '/opt/ros/jazzy/bin:/home/csrobot/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/home/csrobot/.config/Code/User/globalStorage/github.copilot-chat/copilotCli:/home/csrobot/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/csrobot/.vscode/extensions/ms-python.debugpy-2025.18.0-linux-x64/bundled/scripts/noConfigScripts', 'SESSION_MANAGER': 'local/nerve-desktop-1:@/tmp/.ICE-unix/2636,unix/nerve-desktop-1:/tmp/.ICE-unix/2636', 'GTK_EXE_PREFIX': '/snap/code/230/usr', 'INVOCATION_ID': 'af52f784a7c641cb83421800da08599e', 'XDG_MENU_PREFIX': 'gnome-', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':1', 'LOCPATH': '/snap/code/230/usr/lib/locale', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/home/csrobot/.vscode/extensions/ms-python.debugpy-2025.18.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-bd7a196379b84153.txt', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'PYTHONSTARTUP': '/home/csrobot/.config/Code/User/workspaceStorage/2a62b9af397253e88af3eb5dccd5e9b0/ms-python.python/pythonrc.py', 'GIO_MODULE_DIR_VSCODE_SNAP_ORIG': '', 'XDG_DATA_HOME': '/home/csrobot/snap/code/230/.local/share', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-442a0eda63.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'GSETTINGS_SCHEMA_DIR': '/home/csrobot/snap/code/230/.local/share/glib-2.0/schemas', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'NO_AT_BRIDGE': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GTK_PATH_VSCODE_SNAP_ORIG': '', 'FONTCONFIG_FILE': '/etc/fonts/fonts.conf', 'GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG': '', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/csrobot/ros2_ws/src/save_pointcloud/build/save_pointcloud', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/home/csrobot/snap/code/230/.local/share:/home/csrobot/snap/code/230:/snap/code/230/usr/share:/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.029796] (save_pointcloud) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.099912] (-) TimerEvent: {}
+[0.101667] (save_pointcloud) StdoutLine: {'line': b'-- Found rclcpp: 28.1.16 (/opt/ros/jazzy/share/rclcpp/cmake)\n'}
+[0.124813] (save_pointcloud) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[0.130328] (save_pointcloud) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[0.137303] (save_pointcloud) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.145972] (save_pointcloud) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.184396] (save_pointcloud) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[0.185189] (save_pointcloud) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.199984] (-) TimerEvent: {}
+[0.230244] (save_pointcloud) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.273300] (save_pointcloud) StdoutLine: {'line': b'-- Found sensor_msgs: 5.3.6 (/opt/ros/jazzy/share/sensor_msgs/cmake)\n'}
+[0.300064] (-) TimerEvent: {}
+[0.307717] (save_pointcloud) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)\n'}
+[0.312253] (save_pointcloud) StdoutLine: {'line': b'-- Found rosidl_adapter: 4.6.7 (/opt/ros/jazzy/share/rosidl_adapter/cmake)\n'}
+[0.313397] (save_pointcloud) StdoutLine: {'line': b'-- Found std_srvs: 5.3.6 (/opt/ros/jazzy/share/std_srvs/cmake)\n'}
+[0.323669] (save_pointcloud) StdoutLine: {'line': b'-- Found cv_bridge: 4.1.0 (/opt/ros/jazzy/share/cv_bridge/cmake)\n'}
+[0.344147] (save_pointcloud) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /usr/lib/x86_64-linux-gnu/cmake/pcl/Modules/FindFLANN.cmake:45 (find_package):\n'}
+[0.344333] (save_pointcloud) StderrLine: {'line': b'  Policy CMP0144 is not set: find_package uses upper-case <PACKAGENAME>_ROOT\n'}
+[0.344411] (save_pointcloud) StderrLine: {'line': b'  variables.  Run "cmake --help-policy CMP0144" for policy details.  Use the\n'}
+[0.344480] (save_pointcloud) StderrLine: {'line': b'  cmake_policy command to set the policy and suppress this warning.\n'}
+[0.344550] (save_pointcloud) StderrLine: {'line': b'\n'}
+[0.344623] (save_pointcloud) StderrLine: {'line': b'  CMake variable FLANN_ROOT is set to:\n'}
+[0.344695] (save_pointcloud) StderrLine: {'line': b'\n'}
+[0.344765] (save_pointcloud) StderrLine: {'line': b'    /usr\n'}
+[0.344842] (save_pointcloud) StderrLine: {'line': b'\n'}
+[0.344939] (save_pointcloud) StderrLine: {'line': b'  For compatibility, find_package is ignoring the variable, but code in a\n'}
+[0.345006] (save_pointcloud) StderrLine: {'line': b'  .cmake module might still use it.\n'}
+[0.345070] (save_pointcloud) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[0.345136] (save_pointcloud) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:261 (find_package)\n'}
+[0.345201] (save_pointcloud) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:306 (find_flann)\n'}
+[0.345266] (save_pointcloud) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:570 (find_external_library)\n'}
+[0.345331] (save_pointcloud) StderrLine: {'line': b'  CMakeLists.txt:17 (find_package)\n'}
+[0.345395] (save_pointcloud) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[0.345460] (save_pointcloud) StderrLine: {'line': b'\x1b[0m\n'}
+[0.345525] (save_pointcloud) StdoutLine: {'line': b'-- Found flann version 1.9.2\n'}
+[0.357328] (save_pointcloud) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[0.367700] (save_pointcloud) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[0.371470] (save_pointcloud) StdoutLine: {'line': b'-- Could NOT find Pcap (missing: PCAP_LIBRARIES PCAP_INCLUDE_DIRS) \n'}
+[0.371620] (save_pointcloud) StderrLine: {'line': b'\x1b[0m** WARNING ** io features related to pcap will be disabled\x1b[0m\n'}
+[0.400131] (-) TimerEvent: {}
+[0.500376] (-) TimerEvent: {}
+[0.600782] (-) TimerEvent: {}
+[0.681622] (save_pointcloud) StdoutLine: {'line': b'-- looking for PCL_COMMON\n'}
+[0.681840] (save_pointcloud) StdoutLine: {'line': b'-- looking for PCL_KDTREE\n'}
+[0.682054] (save_pointcloud) StdoutLine: {'line': b'-- looking for PCL_OCTREE\n'}
+[0.682253] (save_pointcloud) StdoutLine: {'line': b'-- looking for PCL_SEARCH\n'}
+[0.682497] (save_pointcloud) StdoutLine: {'line': b'-- looking for PCL_SAMPLE_CONSENSUS\n'}
+[0.682690] (save_pointcloud) StdoutLine: {'line': b'-- looking for PCL_FILTERS\n'}
+[0.682891] (save_pointcloud) StdoutLine: {'line': b'-- looking for PCL_IO\n'}
+[0.683600] (save_pointcloud) StdoutLine: {'line': b'-- Found pcl_conversions: 2.6.2 (/opt/ros/jazzy/share/pcl_conversions/cmake)\n'}
+[0.700876] (-) TimerEvent: {}
+[0.801068] (-) TimerEvent: {}
+[0.896043] (save_pointcloud) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)\n'}
+[0.901151] (-) TimerEvent: {}
+[1.001378] (-) TimerEvent: {}
+[1.074823] (save_pointcloud) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.101484] (-) TimerEvent: {}
+[1.143725] (save_pointcloud) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.144699] (save_pointcloud) StdoutLine: {'line': b'-- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)\n'}
+[1.201613] (-) TimerEvent: {}
+[1.301870] (-) TimerEvent: {}
+[1.353631] (save_pointcloud) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed \n'}
+[1.399544] (save_pointcloud) StdoutLine: {'line': b'-- Configuring done (1.4s)\n'}
+[1.401929] (-) TimerEvent: {}
+[1.468507] (save_pointcloud) StdoutLine: {'line': b'-- Generating done (0.1s)\n'}
+[1.482491] (save_pointcloud) StdoutLine: {'line': b'-- Build files have been written to: /home/csrobot/ros2_ws/src/save_pointcloud/build/save_pointcloud\n'}
+[1.502095] (-) TimerEvent: {}
+[1.515777] (save_pointcloud) StdoutLine: {'line': b'[  2%] Built target save_pointcloud__rosidl_generator_type_description\n'}
+[1.521930] (save_pointcloud) StdoutLine: {'line': b'[  2%] Built target ament_cmake_python_copy_save_pointcloud\n'}
+[1.523436] (save_pointcloud) StdoutLine: {'line': b'[  6%] Built target pointcloud_client\n'}
+[1.529463] (save_pointcloud) StdoutLine: {'line': b'[ 11%] Built target pointcloud_publisher\n'}
+[1.531277] (save_pointcloud) StdoutLine: {'line': b'[ 13%] Built target save_pointcloud__cpp\n'}
+[1.532328] (save_pointcloud) StdoutLine: {'line': b'[ 18%] Built target pointcloud_subscriber\n'}
+[1.535742] (save_pointcloud) StdoutLine: {'line': b'[ 22%] Built target pointcloud_server\n'}
+[1.536634] (save_pointcloud) StdoutLine: {'line': b'[ 34%] Built target save_pointcloud__rosidl_generator_c\n'}
+[1.556207] (save_pointcloud) StdoutLine: {'line': b'[ 40%] Built target save_pointcloud__rosidl_typesupport_introspection_c\n'}
+[1.557565] (save_pointcloud) StdoutLine: {'line': b'[ 47%] Built target save_pointcloud__rosidl_typesupport_fastrtps_c\n'}
+[1.557767] (save_pointcloud) StdoutLine: {'line': b'[ 54%] Built target save_pointcloud__rosidl_typesupport_cpp\n'}
+[1.560222] (save_pointcloud) StdoutLine: {'line': b'[ 61%] Built target save_pointcloud__rosidl_typesupport_introspection_cpp\n'}
+[1.561712] (save_pointcloud) StdoutLine: {'line': b'[ 68%] Built target save_pointcloud__rosidl_typesupport_c\n'}
+[1.562165] (save_pointcloud) StdoutLine: {'line': b'[ 75%] Built target save_pointcloud__rosidl_typesupport_fastrtps_cpp\n'}
+[1.575294] (save_pointcloud) StdoutLine: {'line': b'[ 75%] Built target save_pointcloud\n'}
+[1.583361] (save_pointcloud) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding CXX object CMakeFiles/center_point_subscriber.dir/src/center_point_subscriber.cpp.o\x1b[0m\n'}
+[1.592622] (save_pointcloud) StdoutLine: {'line': b'[ 79%] Built target save_pointcloud__py\n'}
+[1.602177] (-) TimerEvent: {}
+[1.610587] (save_pointcloud) StdoutLine: {'line': b'[ 84%] Built target save_pointcloud__rosidl_generator_py\n'}
+[1.626027] (save_pointcloud) StdoutLine: {'line': b'[ 88%] Built target save_pointcloud_s__rosidl_typesupport_introspection_c\n'}
+[1.627000] (save_pointcloud) StdoutLine: {'line': b'[ 93%] Built target save_pointcloud_s__rosidl_typesupport_c\n'}
+[1.627997] (save_pointcloud) StdoutLine: {'line': b'[ 97%] Built target save_pointcloud_s__rosidl_typesupport_fastrtps_c\n'}
+[1.656090] (save_pointcloud) StdoutLine: {'line': b'running egg_info\n'}
+[1.668212] (save_pointcloud) StdoutLine: {'line': b'writing save_pointcloud.egg-info/PKG-INFO\n'}
+[1.668399] (save_pointcloud) StdoutLine: {'line': b'writing dependency_links to save_pointcloud.egg-info/dependency_links.txt\n'}
+[1.668501] (save_pointcloud) StdoutLine: {'line': b'writing top-level names to save_pointcloud.egg-info/top_level.txt\n'}
+[1.697250] (save_pointcloud) StdoutLine: {'line': b"reading manifest file 'save_pointcloud.egg-info/SOURCES.txt'\n"}
+[1.697582] (save_pointcloud) StdoutLine: {'line': b"writing manifest file 'save_pointcloud.egg-info/SOURCES.txt'\n"}
+[1.702256] (-) TimerEvent: {}
+[1.714783] (save_pointcloud) StdoutLine: {'line': b'[ 97%] Built target ament_cmake_python_build_save_pointcloud_egg\n'}
+[1.802367] (-) TimerEvent: {}
+[1.902619] (-) TimerEvent: {}
+[2.002893] (-) TimerEvent: {}
+[2.103126] (-) TimerEvent: {}
+[2.203382] (-) TimerEvent: {}
+[2.303687] (-) TimerEvent: {}
+[2.403882] (-) TimerEvent: {}
+[2.504211] (-) TimerEvent: {}
+[2.604450] (-) TimerEvent: {}
+[2.704740] (-) TimerEvent: {}
+[2.805011] (-) TimerEvent: {}
+[2.905285] (-) TimerEvent: {}
+[3.005550] (-) TimerEvent: {}
+[3.105866] (-) TimerEvent: {}
+[3.206205] (-) TimerEvent: {}
+[3.306459] (-) TimerEvent: {}
+[3.406774] (-) TimerEvent: {}
+[3.507036] (-) TimerEvent: {}
+[3.607342] (-) TimerEvent: {}
+[3.707620] (-) TimerEvent: {}
+[3.807958] (-) TimerEvent: {}
+[3.908271] (-) TimerEvent: {}
+[4.008617] (-) TimerEvent: {}
+[4.108889] (-) TimerEvent: {}
+[4.209137] (-) TimerEvent: {}
+[4.309481] (-) TimerEvent: {}
+[4.409746] (-) TimerEvent: {}
+[4.510242] (-) TimerEvent: {}
+[4.610546] (-) TimerEvent: {}
+[4.710852] (-) TimerEvent: {}
+[4.811064] (-) TimerEvent: {}
+[4.911298] (-) TimerEvent: {}
+[5.011535] (-) TimerEvent: {}
+[5.111718] (-) TimerEvent: {}
+[5.212028] (-) TimerEvent: {}
+[5.312301] (-) TimerEvent: {}
+[5.412547] (-) TimerEvent: {}
+[5.512769] (-) TimerEvent: {}
+[5.612950] (-) TimerEvent: {}
+[5.713166] (-) TimerEvent: {}
+[5.813348] (-) TimerEvent: {}
+[5.913573] (-) TimerEvent: {}
+[6.013786] (-) TimerEvent: {}
+[6.114007] (-) TimerEvent: {}
+[6.214286] (-) TimerEvent: {}
+[6.314569] (-) TimerEvent: {}
+[6.414849] (-) TimerEvent: {}
+[6.515131] (-) TimerEvent: {}
+[6.615352] (-) TimerEvent: {}
+[6.715633] (-) TimerEvent: {}
+[6.815866] (-) TimerEvent: {}
+[6.916103] (-) TimerEvent: {}
+[7.016296] (-) TimerEvent: {}
+[7.116567] (-) TimerEvent: {}
+[7.216854] (-) TimerEvent: {}
+[7.317133] (-) TimerEvent: {}
+[7.405835] (save_pointcloud) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable center_point_subscriber\x1b[0m\n'}
+[7.417234] (-) TimerEvent: {}
+[7.517410] (-) TimerEvent: {}
+[7.617621] (-) TimerEvent: {}
+[7.717833] (-) TimerEvent: {}
+[7.765285] (save_pointcloud) StdoutLine: {'line': b'[100%] Built target center_point_subscriber\n'}
+[7.777432] (save_pointcloud) CommandEnded: {'returncode': 0}
+[7.778111] (save_pointcloud) JobProgress: {'identifier': 'save_pointcloud', 'progress': 'install'}
+[7.788854] (save_pointcloud) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/csrobot/ros2_ws/src/save_pointcloud/build/save_pointcloud'], 'cwd': '/home/csrobot/ros2_ws/src/save_pointcloud/build/save_pointcloud', 'env': OrderedDict({'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'PYTHON_BASIC_REPL': '1', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'csrobot', 'FONTCONFIG_PATH': '/etc/fonts', 'GIO_MODULE_DIR': '/home/csrobot/snap/code/common/.cache/gio-modules', 'XDG_SESSION_TYPE': 'x11', 'GIT_ASKPASS': '/snap/code/230/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'GTK_EXE_PREFIX_VSCODE_SNAP_ORIG': '', 'GDK_BACKEND_VSCODE_SNAP_ORIG': '', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/csrobot', 'CHROME_DESKTOP': 'code.desktop', 'LOCPATH_VSCODE_SNAP_ORIG': '', 'OLDPWD': '/home/csrobot/ros2_ws/src', 'TERM_PROGRAM_VERSION': '1.112.0', 'DESKTOP_SESSION': 'ubuntu', 'GTK_PATH': '/snap/code/230/usr/lib/x86_64-linux-gnu/gtk-3.0', 'XDG_DATA_HOME_VSCODE_SNAP_ORIG': '', 'GTK_IM_MODULE_FILE': '/home/csrobot/snap/code/common/.cache/immodules/immodules.cache', 'GIO_LAUNCHED_DESKTOP_FILE': '/var/lib/snapd/desktop/applications/code_code.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG': '', 'VSCODE_GIT_ASKPASS_MAIN': '/snap/code/230/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/snap/code/230/usr/share/code/code', 'MANAGERPID': '2302', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'SYSTEMD_EXEC_PID': '2679', 'BUNDLED_DEBUGPY_PATH': '/home/csrobot/.vscode/extensions/ms-python.debugpy-2025.18.0-linux-x64/bundled/libs/debugpy', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '14832', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'csrobot', 'JOURNAL_STREAM': '8:26699', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@x11.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'XDG_DATA_DIRS_VSCODE_SNAP_ORIG': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'USERNAME': 'csrobot', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'FC_FONTATIONS': '1', 'WINDOWPATH': '2', 'PATH': '/opt/ros/jazzy/bin:/home/csrobot/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/home/csrobot/.config/Code/User/globalStorage/github.copilot-chat/copilotCli:/home/csrobot/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/csrobot/.vscode/extensions/ms-python.debugpy-2025.18.0-linux-x64/bundled/scripts/noConfigScripts', 'SESSION_MANAGER': 'local/nerve-desktop-1:@/tmp/.ICE-unix/2636,unix/nerve-desktop-1:/tmp/.ICE-unix/2636', 'GTK_EXE_PREFIX': '/snap/code/230/usr', 'INVOCATION_ID': 'af52f784a7c641cb83421800da08599e', 'XDG_MENU_PREFIX': 'gnome-', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':1', 'LOCPATH': '/snap/code/230/usr/lib/locale', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/home/csrobot/.vscode/extensions/ms-python.debugpy-2025.18.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-bd7a196379b84153.txt', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'PYTHONSTARTUP': '/home/csrobot/.config/Code/User/workspaceStorage/2a62b9af397253e88af3eb5dccd5e9b0/ms-python.python/pythonrc.py', 'GIO_MODULE_DIR_VSCODE_SNAP_ORIG': '', 'XDG_DATA_HOME': '/home/csrobot/snap/code/230/.local/share', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-442a0eda63.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'GSETTINGS_SCHEMA_DIR': '/home/csrobot/snap/code/230/.local/share/glib-2.0/schemas', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'NO_AT_BRIDGE': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GTK_PATH_VSCODE_SNAP_ORIG': '', 'FONTCONFIG_FILE': '/etc/fonts/fonts.conf', 'GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG': '', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/csrobot/ros2_ws/src/save_pointcloud/build/save_pointcloud', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/home/csrobot/snap/code/230/.local/share:/home/csrobot/snap/code/230:/snap/code/230/usr/share:/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[7.800649] (save_pointcloud) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[7.801008] (save_pointcloud) StdoutLine: {'line': b'-- Up-to-date: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/share/ament_index/resource_index/rosidl_interfaces/save_pointcloud\n'}
+[7.801175] (save_pointcloud) StdoutLine: {'line': b'-- Up-to-date: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/share/save_pointcloud/msg/BoundingBoxCenter.json\n'}
+[7.801311] (save_pointcloud) StdoutLine: {'line': b'-- Up-to-date: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/include/save_pointcloud/save_pointcloud\n'}
+[7.801482] (save_pointcloud) StdoutLine: {'line': b'-- Up-to-date: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/include/save_pointcloud/save_pointcloud/msg\n'}
+[7.801711] (save_pointcloud) StdoutLine: {'line': b'-- Up-to-date: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/include/save_pointcloud/save_pointcloud/msg/detail\n'}
+[7.801855] (save_pointcloud) StdoutLine: {'line': b'-- Up-to-date: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/include/save_pointcloud/save_pointcloud/msg/detail/bounding_box_center__struct.h\n'}
+[7.801978] (save_pointcloud) StdoutLine: {'line': b'-- Up-to-date: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/include/save_pointcloud/save_pointcloud/msg/detail/bounding_box_center__description.c\n'}
+[7.802103] (save_pointcloud) StdoutLine: {'line': b'-- Up-to-date: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/include/save_pointcloud/save_pointcloud/msg/detail/bounding_box_center__type_support.c\n'}
+[7.802216] (save_pointcloud) StdoutLine: {'line': b'-- Up-to-date: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/include/save_pointcloud/save_pointcloud/msg/detail/bounding_box_center__type_support.h\n'}
+[7.802329] (save_pointcloud) StdoutLine: {'line': b'-- Up-to-date: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/include/save_pointcloud/save_pointcloud/msg/detail/bounding_box_center__functions.c\n'}
+[7.802474] (save_pointcloud) StdoutLine: {'line': b'-- Up-to-date: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/include/save_pointcloud/save_pointcloud/msg/detail/bounding_box_center__functions.h\n'}
+[7.802580] (save_pointcloud) StdoutLine: {'line': b'-- Up-to-date: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/include/save_pointcloud/save_pointcloud/msg/bounding_box_center.h\n'}
+[7.802680] (save_pointcloud) StdoutLine: {'line': b'-- Up-to-date: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/include/save_pointcloud/save_pointcloud/msg/rosidl_generator_c__visibility_control.h\n'}
+[7.802781] (save_pointcloud) StdoutLine: {'line': b'-- Up-to-date: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/share/save_pointcloud/environment/library_path.sh\n'}
+[7.802895] (save_pointcloud) StdoutLine: {'line': b'-- Up-to-date: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/share/save_pointcloud/environment/library_path.dsv\n'}
+[7.802996] (save_pointcloud) StdoutLine: {'line': b'-- Up-to-date: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/lib/libsave_pointcloud__rosidl_generator_c.so\n'}
+[7.803095] (save_pointcloud) StdoutLine: {'line': b'-- Up-to-date: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/include/save_pointcloud/save_pointcloud\n'}
+[7.803195] (save_pointcloud) StdoutLine: {'line': b'-- Up-to-date: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/include/save_pointcloud/save_pointcloud/msg\n'}
+[7.803295] (save_pointcloud) StdoutLine: {'line': b'-- Up-to-date: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/include/save_pointcloud/save_pointcloud/msg/detail\n'}
+[7.803422] (save_pointcloud) StdoutLine: {'line': b'-- Up-to-date: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/include/save_pointcloud/save_pointcloud/msg/detail/bounding_box_center__rosidl_typesupport_fastrtps_c.h\n'}
+[7.803589] (save_pointcloud) StdoutLine: {'line': b'-- Up-to-date: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/include/save_pointcloud/save_pointcloud/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[7.803719] (save_pointcloud) StdoutLine: {'line': b'-- Up-to-date: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/lib/libsave_pointcloud__rosidl_typesupport_fastrtps_c.so\n'}
+[7.803815] (save_pointcloud) StdoutLine: {'line': b'-- Up-to-date: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/include/save_pointcloud/save_pointcloud\n'}
+[7.803926] (save_pointcloud) StdoutLine: {'line': b'-- Up-to-date: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/include/save_pointcloud/save_pointcloud/msg\n'}
+[7.804026] (save_pointcloud) StdoutLine: {'line': b'-- Up-to-date: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/include/save_pointcloud/save_pointcloud/msg/detail\n'}
+[7.804123] (save_pointcloud) StdoutLine: {'line': b'-- Up-to-date: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/include/save_pointcloud/save_pointcloud/msg/detail/bounding_box_center__struct.hpp\n'}
+[7.804221] (save_pointcloud) StdoutLine: {'line': b'-- Up-to-date: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/include/save_pointcloud/save_pointcloud/msg/detail/bounding_box_center__type_support.hpp\n'}
+[7.804362] (save_pointcloud) StdoutLine: {'line': b'-- Up-to-date: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/include/save_pointcloud/save_pointcloud/msg/detail/bounding_box_center__builder.hpp\n'}
+[7.804484] (save_pointcloud) StdoutLine: {'line': b'-- Up-to-date: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/include/save_pointcloud/save_pointcloud/msg/detail/bounding_box_center__traits.hpp\n'}
+[7.804570] (save_pointcloud) StdoutLine: {'line': b'-- Up-to-date: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/include/save_pointcloud/save_pointcloud/msg/bounding_box_center.hpp\n'}
+[7.804655] (save_pointcloud) StdoutLine: {'line': b'-- Up-to-date: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/include/save_pointcloud/save_pointcloud/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[7.804735] (save_pointcloud) StdoutLine: {'line': b'-- Up-to-date: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/include/save_pointcloud/save_pointcloud\n'}
+[7.804816] (save_pointcloud) StdoutLine: {'line': b'-- Up-to-date: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/include/save_pointcloud/save_pointcloud/msg\n'}
+[7.804909] (save_pointcloud) StdoutLine: {'line': b'-- Up-to-date: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/include/save_pointcloud/save_pointcloud/msg/detail\n'}
+[7.804994] (save_pointcloud) StdoutLine: {'line': b'-- Up-to-date: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/include/save_pointcloud/save_pointcloud/msg/detail/dds_fastrtps\n'}
+[7.805076] (save_pointcloud) StdoutLine: {'line': b'-- Up-to-date: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/include/save_pointcloud/save_pointcloud/msg/detail/bounding_box_center__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[7.805192] (save_pointcloud) StdoutLine: {'line': b'-- Up-to-date: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/include/save_pointcloud/save_pointcloud/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[7.805282] (save_pointcloud) StdoutLine: {'line': b'-- Up-to-date: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/lib/libsave_pointcloud__rosidl_typesupport_fastrtps_cpp.so\n'}
+[7.805369] (save_pointcloud) StdoutLine: {'line': b'-- Up-to-date: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/include/save_pointcloud/save_pointcloud\n'}
+[7.805454] (save_pointcloud) StdoutLine: {'line': b'-- Up-to-date: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/include/save_pointcloud/save_pointcloud/msg\n'}
+[7.805540] (save_pointcloud) StdoutLine: {'line': b'-- Up-to-date: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/include/save_pointcloud/save_pointcloud/msg/detail\n'}
+[7.805624] (save_pointcloud) StdoutLine: {'line': b'-- Up-to-date: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/include/save_pointcloud/save_pointcloud/msg/detail/bounding_box_center__rosidl_typesupport_introspection_c.h\n'}
+[7.805701] (save_pointcloud) StdoutLine: {'line': b'-- Up-to-date: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/include/save_pointcloud/save_pointcloud/msg/detail/bounding_box_center__type_support.c\n'}
+[7.805775] (save_pointcloud) StdoutLine: {'line': b'-- Up-to-date: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/include/save_pointcloud/save_pointcloud/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[7.805982] (save_pointcloud) StdoutLine: {'line': b'-- Up-to-date: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/lib/libsave_pointcloud__rosidl_typesupport_introspection_c.so\n'}
+[7.806068] (save_pointcloud) StdoutLine: {'line': b'-- Up-to-date: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/lib/libsave_pointcloud__rosidl_typesupport_c.so\n'}
+[7.806142] (save_pointcloud) StdoutLine: {'line': b'-- Up-to-date: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/include/save_pointcloud/save_pointcloud\n'}
+[7.806236] (save_pointcloud) StdoutLine: {'line': b'-- Up-to-date: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/include/save_pointcloud/save_pointcloud/msg\n'}
+[7.806312] (save_pointcloud) StdoutLine: {'line': b'-- Up-to-date: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/include/save_pointcloud/save_pointcloud/msg/detail\n'}
+[7.806426] (save_pointcloud) StdoutLine: {'line': b'-- Up-to-date: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/include/save_pointcloud/save_pointcloud/msg/detail/bounding_box_center__rosidl_typesupport_introspection_cpp.hpp\n'}
+[7.806504] (save_pointcloud) StdoutLine: {'line': b'-- Up-to-date: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/include/save_pointcloud/save_pointcloud/msg/detail/bounding_box_center__type_support.cpp\n'}
+[7.806578] (save_pointcloud) StdoutLine: {'line': b'-- Up-to-date: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/lib/libsave_pointcloud__rosidl_typesupport_introspection_cpp.so\n'}
+[7.806653] (save_pointcloud) StdoutLine: {'line': b'-- Up-to-date: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/lib/libsave_pointcloud__rosidl_typesupport_cpp.so\n'}
+[7.806725] (save_pointcloud) StdoutLine: {'line': b'-- Up-to-date: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/share/save_pointcloud/environment/pythonpath.sh\n'}
+[7.806794] (save_pointcloud) StdoutLine: {'line': b'-- Up-to-date: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/share/save_pointcloud/environment/pythonpath.dsv\n'}
+[7.806869] (save_pointcloud) StdoutLine: {'line': b'-- Up-to-date: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/lib/python3.12/site-packages/save_pointcloud-0.0.0-py3.12.egg-info\n'}
+[7.806968] (save_pointcloud) StdoutLine: {'line': b'-- Installing: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/lib/python3.12/site-packages/save_pointcloud-0.0.0-py3.12.egg-info/dependency_links.txt\n'}
+[7.807038] (save_pointcloud) StdoutLine: {'line': b'-- Installing: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/lib/python3.12/site-packages/save_pointcloud-0.0.0-py3.12.egg-info/SOURCES.txt\n'}
+[7.807103] (save_pointcloud) StdoutLine: {'line': b'-- Installing: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/lib/python3.12/site-packages/save_pointcloud-0.0.0-py3.12.egg-info/top_level.txt\n'}
+[7.807168] (save_pointcloud) StdoutLine: {'line': b'-- Installing: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/lib/python3.12/site-packages/save_pointcloud-0.0.0-py3.12.egg-info/PKG-INFO\n'}
+[7.807235] (save_pointcloud) StdoutLine: {'line': b'-- Up-to-date: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/lib/python3.12/site-packages/save_pointcloud\n'}
+[7.807300] (save_pointcloud) StdoutLine: {'line': b'-- Up-to-date: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/lib/python3.12/site-packages/save_pointcloud/save_pointcloud_s__rosidl_typesupport_introspection_c.so\n'}
+[7.807399] (save_pointcloud) StdoutLine: {'line': b'-- Up-to-date: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/lib/python3.12/site-packages/save_pointcloud/_save_pointcloud_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[7.807460] (save_pointcloud) StdoutLine: {'line': b'-- Up-to-date: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/lib/python3.12/site-packages/save_pointcloud/_save_pointcloud_s.ep.rosidl_typesupport_c.c\n'}
+[7.807521] (save_pointcloud) StdoutLine: {'line': b'-- Up-to-date: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/lib/python3.12/site-packages/save_pointcloud/msg\n'}
+[7.807581] (save_pointcloud) StdoutLine: {'line': b'-- Up-to-date: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/lib/python3.12/site-packages/save_pointcloud/msg/__init__.py\n'}
+[7.807642] (save_pointcloud) StdoutLine: {'line': b'-- Up-to-date: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/lib/python3.12/site-packages/save_pointcloud/msg/_bounding_box_center.py\n'}
+[7.807707] (save_pointcloud) StdoutLine: {'line': b'-- Up-to-date: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/lib/python3.12/site-packages/save_pointcloud/msg/_bounding_box_center_s.c\n'}
+[7.807765] (save_pointcloud) StdoutLine: {'line': b'-- Up-to-date: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/lib/python3.12/site-packages/save_pointcloud/save_pointcloud_s__rosidl_typesupport_c.so\n'}
+[7.807819] (save_pointcloud) StdoutLine: {'line': b'-- Up-to-date: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/lib/python3.12/site-packages/save_pointcloud/_save_pointcloud_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[7.807881] (save_pointcloud) StdoutLine: {'line': b'-- Up-to-date: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/lib/python3.12/site-packages/save_pointcloud/save_pointcloud_s__rosidl_typesupport_fastrtps_c.so\n'}
+[7.807937] (save_pointcloud) StdoutLine: {'line': b'-- Installing: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/lib/python3.12/site-packages/save_pointcloud/__init__.py\n'}
+[7.817884] (-) TimerEvent: {}
+[7.831394] (save_pointcloud) StdoutLine: {'line': b"Listing '/home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/lib/python3.12/site-packages/save_pointcloud'...\n"}
+[7.831491] (save_pointcloud) StdoutLine: {'line': b"Compiling '/home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/lib/python3.12/site-packages/save_pointcloud/__init__.py'...\n"}
+[7.831527] (save_pointcloud) StdoutLine: {'line': b"Listing '/home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/lib/python3.12/site-packages/save_pointcloud/msg'...\n"}
+[7.835016] (save_pointcloud) StdoutLine: {'line': b'-- Up-to-date: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/lib/python3.12/site-packages/save_pointcloud/save_pointcloud_s__rosidl_typesupport_fastrtps_c.so\n'}
+[7.835193] (save_pointcloud) StdoutLine: {'line': b'-- Up-to-date: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/lib/python3.12/site-packages/save_pointcloud/save_pointcloud_s__rosidl_typesupport_introspection_c.so\n'}
+[7.835369] (save_pointcloud) StdoutLine: {'line': b'-- Up-to-date: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/lib/python3.12/site-packages/save_pointcloud/save_pointcloud_s__rosidl_typesupport_c.so\n'}
+[7.835539] (save_pointcloud) StdoutLine: {'line': b'-- Up-to-date: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/lib/libsave_pointcloud__rosidl_generator_py.so\n'}
+[7.835654] (save_pointcloud) StdoutLine: {'line': b'-- Up-to-date: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/share/save_pointcloud/msg/BoundingBoxCenter.idl\n'}
+[7.835728] (save_pointcloud) StdoutLine: {'line': b'-- Up-to-date: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/share/save_pointcloud/msg/BoundingBoxCenter.msg\n'}
+[7.835812] (save_pointcloud) StdoutLine: {'line': b'-- Up-to-date: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/lib/save_pointcloud/pointcloud_subscriber\n'}
+[7.836036] (save_pointcloud) StdoutLine: {'line': b'-- Up-to-date: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/lib/save_pointcloud/pointcloud_server\n'}
+[7.836240] (save_pointcloud) StdoutLine: {'line': b'-- Up-to-date: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/lib/save_pointcloud/pointcloud_client\n'}
+[7.836400] (save_pointcloud) StdoutLine: {'line': b'-- Up-to-date: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/lib/save_pointcloud/pointcloud_publisher\n'}
+[7.836568] (save_pointcloud) StdoutLine: {'line': b'-- Installing: /home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/lib/save_pointcloud/center_point_subscriber\n'}
+[7.839434] (save_pointcloud) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud/lib/save_pointcloud/center_point_subscriber" to ""\n'}
+[7.839587] (save_pointcloud) StderrLine: {'line': b'\x1b[31mCMake Error at cmake_install.cmake:494 (file):\n'}
+[7.839644] (save_pointcloud) StderrLine: {'line': b'  file INSTALL cannot find\n'}
+[7.839699] (save_pointcloud) StderrLine: {'line': b'  "/home/csrobot/ros2_ws/src/save_pointcloud/scripts/center_point_publisher.py":\n'}
+[7.839746] (save_pointcloud) StderrLine: {'line': b'  No such file or directory.\n'}
+[7.839789] (save_pointcloud) StderrLine: {'line': b'\n'}
+[7.839839] (save_pointcloud) StderrLine: {'line': b'\x1b[0m\n'}
+[7.840974] (save_pointcloud) CommandEnded: {'returncode': 1}
+[7.849792] (save_pointcloud) JobEnded: {'identifier': 'save_pointcloud', 'rc': 1}
+[7.860210] (-) EventReactorShutdown: {}

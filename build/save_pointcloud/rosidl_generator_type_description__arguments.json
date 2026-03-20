@@ -1,0 +1,11 @@
+{
+  "package_name": "save_pointcloud",
+  "output_dir": "/home/csrobot/ros2_ws/src/save_pointcloud/build/save_pointcloud/rosidl_generator_type_description/save_pointcloud",
+  "idl_tuples": [
+    "/home/csrobot/ros2_ws/src/save_pointcloud/build/save_pointcloud/rosidl_adapter/save_pointcloud:msg/BoundingBoxCenter.idl"
+  ],
+  "include_paths": [
+    "geometry_msgs:/opt/ros/jazzy/share/geometry_msgs",
+    "std_msgs:/opt/ros/jazzy/share/std_msgs"
+  ]
+}

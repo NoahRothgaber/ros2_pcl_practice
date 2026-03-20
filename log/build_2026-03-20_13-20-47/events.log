@@ -1,0 +1,127 @@
+[0.000000] (-) TimerEvent: {}
+[0.000115] (save_pointcloud) JobQueued: {'identifier': 'save_pointcloud', 'dependencies': OrderedDict()}
+[0.000329] (save_pointcloud) JobStarted: {'identifier': 'save_pointcloud'}
+[0.007452] (save_pointcloud) JobProgress: {'identifier': 'save_pointcloud', 'progress': 'cmake'}
+[0.007928] (save_pointcloud) JobProgress: {'identifier': 'save_pointcloud', 'progress': 'build'}
+[0.008324] (save_pointcloud) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/csrobot/ros2_ws/src/save_pointcloud/build/save_pointcloud', '--', '-j16', '-l16'], 'cwd': '/home/csrobot/ros2_ws/src/save_pointcloud/build/save_pointcloud', 'env': OrderedDict({'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'PYTHON_BASIC_REPL': '1', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'csrobot', 'FONTCONFIG_PATH': '/etc/fonts', 'GIO_MODULE_DIR': '/home/csrobot/snap/code/common/.cache/gio-modules', 'XDG_SESSION_TYPE': 'x11', 'GIT_ASKPASS': '/snap/code/230/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'GTK_EXE_PREFIX_VSCODE_SNAP_ORIG': '', 'GDK_BACKEND_VSCODE_SNAP_ORIG': '', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/csrobot', 'CHROME_DESKTOP': 'code.desktop', 'LOCPATH_VSCODE_SNAP_ORIG': '', 'OLDPWD': '/home/csrobot/ros2_ws/src', 'TERM_PROGRAM_VERSION': '1.112.0', 'DESKTOP_SESSION': 'ubuntu', 'GTK_PATH': '/snap/code/230/usr/lib/x86_64-linux-gnu/gtk-3.0', 'XDG_DATA_HOME_VSCODE_SNAP_ORIG': '', 'GTK_IM_MODULE_FILE': '/home/csrobot/snap/code/common/.cache/immodules/immodules.cache', 'GIO_LAUNCHED_DESKTOP_FILE': '/var/lib/snapd/desktop/applications/code_code.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG': '', 'VSCODE_GIT_ASKPASS_MAIN': '/snap/code/230/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/snap/code/230/usr/share/code/code', 'MANAGERPID': '2302', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'SYSTEMD_EXEC_PID': '2679', 'BUNDLED_DEBUGPY_PATH': '/home/csrobot/.vscode/extensions/ms-python.debugpy-2025.18.0-linux-x64/bundled/libs/debugpy', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '14832', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'csrobot', 'JOURNAL_STREAM': '8:26699', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@x11.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'XDG_DATA_DIRS_VSCODE_SNAP_ORIG': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'USERNAME': 'csrobot', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'FC_FONTATIONS': '1', 'WINDOWPATH': '2', 'PATH': '/opt/ros/jazzy/bin:/home/csrobot/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/home/csrobot/.config/Code/User/globalStorage/github.copilot-chat/copilotCli:/home/csrobot/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/csrobot/.vscode/extensions/ms-python.debugpy-2025.18.0-linux-x64/bundled/scripts/noConfigScripts', 'SESSION_MANAGER': 'local/nerve-desktop-1:@/tmp/.ICE-unix/2636,unix/nerve-desktop-1:/tmp/.ICE-unix/2636', 'GTK_EXE_PREFIX': '/snap/code/230/usr', 'INVOCATION_ID': 'af52f784a7c641cb83421800da08599e', 'XDG_MENU_PREFIX': 'gnome-', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':1', 'LOCPATH': '/snap/code/230/usr/lib/locale', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/home/csrobot/.vscode/extensions/ms-python.debugpy-2025.18.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-bd7a196379b84153.txt', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'PYTHONSTARTUP': '/home/csrobot/.config/Code/User/workspaceStorage/2a62b9af397253e88af3eb5dccd5e9b0/ms-python.python/pythonrc.py', 'GIO_MODULE_DIR_VSCODE_SNAP_ORIG': '', 'XDG_DATA_HOME': '/home/csrobot/snap/code/230/.local/share', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-442a0eda63.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'GSETTINGS_SCHEMA_DIR': '/home/csrobot/snap/code/230/.local/share/glib-2.0/schemas', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'NO_AT_BRIDGE': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GTK_PATH_VSCODE_SNAP_ORIG': '', 'FONTCONFIG_FILE': '/etc/fonts/fonts.conf', 'GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG': '', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/csrobot/ros2_ws/src/save_pointcloud/build/save_pointcloud', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/home/csrobot/snap/code/230/.local/share:/home/csrobot/snap/code/230:/snap/code/230/usr/share:/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}), 'shell': False}
+[0.031610] (save_pointcloud) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.049348] (save_pointcloud) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[0.099941] (-) TimerEvent: {}
+[0.116941] (save_pointcloud) StdoutLine: {'line': b'-- Found rclcpp: 28.1.16 (/opt/ros/jazzy/share/rclcpp/cmake)\n'}
+[0.132921] (save_pointcloud) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[0.138253] (save_pointcloud) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[0.144941] (save_pointcloud) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.153068] (save_pointcloud) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.189089] (save_pointcloud) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[0.189908] (save_pointcloud) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.200112] (-) TimerEvent: {}
+[0.248289] (save_pointcloud) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.286320] (save_pointcloud) StdoutLine: {'line': b'-- Found sensor_msgs: 5.3.6 (/opt/ros/jazzy/share/sensor_msgs/cmake)\n'}
+[0.300283] (-) TimerEvent: {}
+[0.318876] (save_pointcloud) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)\n'}
+[0.323224] (save_pointcloud) StdoutLine: {'line': b'-- Found rosidl_adapter: 4.6.7 (/opt/ros/jazzy/share/rosidl_adapter/cmake)\n'}
+[0.324335] (save_pointcloud) StdoutLine: {'line': b'-- Found std_srvs: 5.3.6 (/opt/ros/jazzy/share/std_srvs/cmake)\n'}
+[0.333963] (save_pointcloud) StdoutLine: {'line': b'-- Found cv_bridge: 4.1.0 (/opt/ros/jazzy/share/cv_bridge/cmake)\n'}
+[0.354018] (save_pointcloud) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /usr/lib/x86_64-linux-gnu/cmake/pcl/Modules/FindFLANN.cmake:45 (find_package):\n'}
+[0.354191] (save_pointcloud) StderrLine: {'line': b'  Policy CMP0144 is not set: find_package uses upper-case <PACKAGENAME>_ROOT\n'}
+[0.354267] (save_pointcloud) StderrLine: {'line': b'  variables.  Run "cmake --help-policy CMP0144" for policy details.  Use the\n'}
+[0.354337] (save_pointcloud) StderrLine: {'line': b'  cmake_policy command to set the policy and suppress this warning.\n'}
+[0.354403] (save_pointcloud) StderrLine: {'line': b'\n'}
+[0.354471] (save_pointcloud) StderrLine: {'line': b'  CMake variable FLANN_ROOT is set to:\n'}
+[0.354561] (save_pointcloud) StderrLine: {'line': b'\n'}
+[0.354628] (save_pointcloud) StderrLine: {'line': b'    /usr\n'}
+[0.354693] (save_pointcloud) StderrLine: {'line': b'\n'}
+[0.354758] (save_pointcloud) StderrLine: {'line': b'  For compatibility, find_package is ignoring the variable, but code in a\n'}
+[0.354828] (save_pointcloud) StderrLine: {'line': b'  .cmake module might still use it.\n'}
+[0.354897] (save_pointcloud) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[0.354963] (save_pointcloud) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:261 (find_package)\n'}
+[0.355028] (save_pointcloud) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:306 (find_flann)\n'}
+[0.355093] (save_pointcloud) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:570 (find_external_library)\n'}
+[0.355158] (save_pointcloud) StderrLine: {'line': b'  CMakeLists.txt:17 (find_package)\n'}
+[0.355221] (save_pointcloud) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[0.355285] (save_pointcloud) StderrLine: {'line': b'\x1b[0m\n'}
+[0.355349] (save_pointcloud) StdoutLine: {'line': b'-- Found flann version 1.9.2\n'}
+[0.364263] (save_pointcloud) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[0.369949] (save_pointcloud) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[0.373777] (save_pointcloud) StdoutLine: {'line': b'-- Could NOT find Pcap (missing: PCAP_LIBRARIES PCAP_INCLUDE_DIRS) \n'}
+[0.374066] (save_pointcloud) StderrLine: {'line': b'\x1b[0m** WARNING ** io features related to pcap will be disabled\x1b[0m\n'}
+[0.400381] (-) TimerEvent: {}
+[0.500730] (-) TimerEvent: {}
+[0.601398] (-) TimerEvent: {}
+[0.677552] (save_pointcloud) StdoutLine: {'line': b'-- looking for PCL_COMMON\n'}
+[0.677826] (save_pointcloud) StdoutLine: {'line': b'-- looking for PCL_KDTREE\n'}
+[0.678004] (save_pointcloud) StdoutLine: {'line': b'-- looking for PCL_OCTREE\n'}
+[0.678215] (save_pointcloud) StdoutLine: {'line': b'-- looking for PCL_SEARCH\n'}
+[0.678416] (save_pointcloud) StdoutLine: {'line': b'-- looking for PCL_SAMPLE_CONSENSUS\n'}
+[0.678580] (save_pointcloud) StdoutLine: {'line': b'-- looking for PCL_FILTERS\n'}
+[0.678785] (save_pointcloud) StdoutLine: {'line': b'-- looking for PCL_IO\n'}
+[0.679603] (save_pointcloud) StdoutLine: {'line': b'-- Found pcl_conversions: 2.6.2 (/opt/ros/jazzy/share/pcl_conversions/cmake)\n'}
+[0.701515] (-) TimerEvent: {}
+[0.801877] (-) TimerEvent: {}
+[0.829296] (save_pointcloud) StderrLine: {'line': b"Error parsing '/home/csrobot/ros2_ws/src/save_pointcloud/package.xml':\n"}
+[0.901970] (-) TimerEvent: {}
+[1.002249] (-) TimerEvent: {}
+[1.102562] (-) TimerEvent: {}
+[1.202895] (-) TimerEvent: {}
+[1.303211] (-) TimerEvent: {}
+[1.403509] (-) TimerEvent: {}
+[1.503804] (-) TimerEvent: {}
+[1.604021] (-) TimerEvent: {}
+[1.704251] (-) TimerEvent: {}
+[1.804452] (-) TimerEvent: {}
+[1.904739] (-) TimerEvent: {}
+[2.004957] (-) TimerEvent: {}
+[2.105145] (-) TimerEvent: {}
+[2.205406] (-) TimerEvent: {}
+[2.305625] (-) TimerEvent: {}
+[2.405848] (-) TimerEvent: {}
+[2.506069] (-) TimerEvent: {}
+[2.606271] (-) TimerEvent: {}
+[2.706469] (-) TimerEvent: {}
+[2.806749] (-) TimerEvent: {}
+[2.808288] (save_pointcloud) StderrLine: {'line': b'Traceback (most recent call last):\n'}
+[2.808388] (save_pointcloud) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/catkin_pkg/package.py", line 610, in parse_package_string\n'}
+[2.808425] (save_pointcloud) StderrLine: {'line': b'    root = dom.parseString(data)\n'}
+[2.808457] (save_pointcloud) StderrLine: {'line': b'           ^^^^^^^^^^^^^^^^^^^^^\n'}
+[2.808487] (save_pointcloud) StderrLine: {'line': b'  File "/usr/lib/python3.12/xml/dom/minidom.py", line 1995, in parseString\n'}
+[2.808561] (save_pointcloud) StderrLine: {'line': b'    return expatbuilder.parseString(string)\n'}
+[2.808595] (save_pointcloud) StderrLine: {'line': b'           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n'}
+[2.808625] (save_pointcloud) StderrLine: {'line': b'  File "/usr/lib/python3.12/xml/dom/expatbuilder.py", line 922, in parseString\n'}
+[2.808705] (save_pointcloud) StderrLine: {'line': b'    return builder.parseString(string)\n'}
+[2.808735] (save_pointcloud) StderrLine: {'line': b'           ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n'}
+[2.808765] (save_pointcloud) StderrLine: {'line': b'  File "/usr/lib/python3.12/xml/dom/expatbuilder.py", line 220, in parseString\n'}
+[2.808803] (save_pointcloud) StderrLine: {'line': b'    parser.Parse(string, True)\n'}
+[2.808833] (save_pointcloud) StderrLine: {'line': b'xml.parsers.expat.ExpatError: not well-formed (invalid token): line 1, column 22\n'}
+[2.808862] (save_pointcloud) StderrLine: {'line': b'\n'}
+[2.808890] (save_pointcloud) StderrLine: {'line': b'During handling of the above exception, another exception occurred:\n'}
+[2.808919] (save_pointcloud) StderrLine: {'line': b'\n'}
+[2.808947] (save_pointcloud) StderrLine: {'line': b'Traceback (most recent call last):\n'}
+[2.808974] (save_pointcloud) StderrLine: {'line': b'  File "/opt/ros/jazzy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 150, in <module>\n'}
+[2.809002] (save_pointcloud) StderrLine: {'line': b'    main()\n'}
+[2.809030] (save_pointcloud) StderrLine: {'line': b'  File "/opt/ros/jazzy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 53, in main\n'}
+[2.809057] (save_pointcloud) StderrLine: {'line': b'    raise e\n'}
+[2.809084] (save_pointcloud) StderrLine: {'line': b'  File "/opt/ros/jazzy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 49, in main\n'}
+[2.809113] (save_pointcloud) StderrLine: {'line': b'    package = parse_package_string(\n'}
+[2.809139] (save_pointcloud) StderrLine: {'line': b'              ^^^^^^^^^^^^^^^^^^^^^\n'}
+[2.809166] (save_pointcloud) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/catkin_pkg/package.py", line 612, in parse_package_string\n'}
+[2.809194] (save_pointcloud) StderrLine: {'line': b"    raise InvalidPackage('The manifest contains invalid XML:\\n%s' % ex, filename)\n"}
+[2.809220] (save_pointcloud) StderrLine: {'line': b"catkin_pkg.package.InvalidPackage: Error(s) in package '/home/csrobot/ros2_ws/src/save_pointcloud/package.xml':\n"}
+[2.809247] (save_pointcloud) StderrLine: {'line': b'The manifest contains invalid XML:\n'}
+[2.809273] (save_pointcloud) StderrLine: {'line': b'not well-formed (invalid token): line 1, column 22\n'}
+[2.835567] (save_pointcloud) StderrLine: {'line': b'\x1b[31mCMake Error at /opt/ros/jazzy/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:95 (message):\n'}
+[2.835669] (save_pointcloud) StderrLine: {'line': b'  execute_process(/usr/bin/python3\n'}
+[2.835700] (save_pointcloud) StderrLine: {'line': b'  /opt/ros/jazzy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py\n'}
+[2.835730] (save_pointcloud) StderrLine: {'line': b'  /home/csrobot/ros2_ws/src/save_pointcloud/package.xml\n'}
+[2.835760] (save_pointcloud) StderrLine: {'line': b'  /home/csrobot/ros2_ws/src/save_pointcloud/build/save_pointcloud/ament_cmake_core/package.cmake)\n'}
+[2.835795] (save_pointcloud) StderrLine: {'line': b'  returned error code 1\n'}
+[2.835827] (save_pointcloud) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[2.835857] (save_pointcloud) StderrLine: {'line': b'  /opt/ros/jazzy/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:49 (_ament_package_xml)\n'}
+[2.835887] (save_pointcloud) StderrLine: {'line': b'  /opt/ros/jazzy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:220 (ament_package_xml)\n'}
+[2.835918] (save_pointcloud) StderrLine: {'line': b'  CMakeLists.txt:20 (rosidl_generate_interfaces)\n'}
+[2.835948] (save_pointcloud) StderrLine: {'line': b'\n'}
+[2.835978] (save_pointcloud) StderrLine: {'line': b'\x1b[0m\n'}
+[2.836043] (save_pointcloud) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[2.845112] (save_pointcloud) StderrLine: {'line': b'gmake: *** [Makefile:1020: cmake_check_build_system] Error 1\n'}
+[2.846508] (save_pointcloud) CommandEnded: {'returncode': 2}
+[2.846693] (save_pointcloud) JobEnded: {'identifier': 'save_pointcloud', 'rc': 2}
+[2.857039] (-) EventReactorShutdown: {}

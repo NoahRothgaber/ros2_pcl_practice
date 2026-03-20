@@ -1,0 +1,92 @@
+[0.009s] Invoking command in '/home/csrobot/ros2_ws/src/save_pointcloud/build/save_pointcloud': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/csrobot/ros2_ws/src/save_pointcloud/build/save_pointcloud -- -j16 -l16
+[0.031s] -- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.049s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.117s] -- Found rclcpp: 28.1.16 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.133s] -- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.138s] -- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.145s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.153s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.189s] -- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.190s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[0.248s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.286s] -- Found sensor_msgs: 5.3.6 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+[0.319s] -- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[0.323s] -- Found rosidl_adapter: 4.6.7 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[0.324s] -- Found std_srvs: 5.3.6 (/opt/ros/jazzy/share/std_srvs/cmake)
+[0.334s] -- Found cv_bridge: 4.1.0 (/opt/ros/jazzy/share/cv_bridge/cmake)
+[0.354s] [33mCMake Warning (dev) at /usr/lib/x86_64-linux-gnu/cmake/pcl/Modules/FindFLANN.cmake:45 (find_package):
+[0.354s]   Policy CMP0144 is not set: find_package uses upper-case <PACKAGENAME>_ROOT
+[0.354s]   variables.  Run "cmake --help-policy CMP0144" for policy details.  Use the
+[0.354s]   cmake_policy command to set the policy and suppress this warning.
+[0.354s] 
+[0.354s]   CMake variable FLANN_ROOT is set to:
+[0.354s] 
+[0.354s]     /usr
+[0.354s] 
+[0.354s]   For compatibility, find_package is ignoring the variable, but code in a
+[0.355s]   .cmake module might still use it.
+[0.355s] Call Stack (most recent call first):
+[0.355s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:261 (find_package)
+[0.355s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:306 (find_flann)
+[0.355s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:570 (find_external_library)
+[0.355s]   CMakeLists.txt:17 (find_package)
+[0.355s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[0.355s] [0m
+[0.355s] -- Found flann version 1.9.2
+[0.364s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[0.370s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[0.374s] -- Could NOT find Pcap (missing: PCAP_LIBRARIES PCAP_INCLUDE_DIRS) 
+[0.374s] [0m** WARNING ** io features related to pcap will be disabled[0m
+[0.677s] -- looking for PCL_COMMON
+[0.678s] -- looking for PCL_KDTREE
+[0.678s] -- looking for PCL_OCTREE
+[0.678s] -- looking for PCL_SEARCH
+[0.678s] -- looking for PCL_SAMPLE_CONSENSUS
+[0.678s] -- looking for PCL_FILTERS
+[0.679s] -- looking for PCL_IO
+[0.679s] -- Found pcl_conversions: 2.6.2 (/opt/ros/jazzy/share/pcl_conversions/cmake)
+[0.829s] Error parsing '/home/csrobot/ros2_ws/src/save_pointcloud/package.xml':
+[2.808s] Traceback (most recent call last):
+[2.808s]   File "/usr/lib/python3/dist-packages/catkin_pkg/package.py", line 610, in parse_package_string
+[2.808s]     root = dom.parseString(data)
+[2.808s]            ^^^^^^^^^^^^^^^^^^^^^
+[2.808s]   File "/usr/lib/python3.12/xml/dom/minidom.py", line 1995, in parseString
+[2.808s]     return expatbuilder.parseString(string)
+[2.808s]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2.808s]   File "/usr/lib/python3.12/xml/dom/expatbuilder.py", line 922, in parseString
+[2.808s]     return builder.parseString(string)
+[2.808s]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2.808s]   File "/usr/lib/python3.12/xml/dom/expatbuilder.py", line 220, in parseString
+[2.808s]     parser.Parse(string, True)
+[2.809s] xml.parsers.expat.ExpatError: not well-formed (invalid token): line 1, column 22
+[2.809s] 
+[2.809s] During handling of the above exception, another exception occurred:
+[2.809s] 
+[2.809s] Traceback (most recent call last):
+[2.809s]   File "/opt/ros/jazzy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 150, in <module>
+[2.809s]     main()
+[2.809s]   File "/opt/ros/jazzy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 53, in main
+[2.809s]     raise e
+[2.809s]   File "/opt/ros/jazzy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 49, in main
+[2.809s]     package = parse_package_string(
+[2.809s]               ^^^^^^^^^^^^^^^^^^^^^
+[2.809s]   File "/usr/lib/python3/dist-packages/catkin_pkg/package.py", line 612, in parse_package_string
+[2.809s]     raise InvalidPackage('The manifest contains invalid XML:\n%s' % ex, filename)
+[2.809s] catkin_pkg.package.InvalidPackage: Error(s) in package '/home/csrobot/ros2_ws/src/save_pointcloud/package.xml':
+[2.809s] The manifest contains invalid XML:
+[2.809s] not well-formed (invalid token): line 1, column 22
+[2.835s] [31mCMake Error at /opt/ros/jazzy/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:95 (message):
+[2.835s]   execute_process(/usr/bin/python3
+[2.835s]   /opt/ros/jazzy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py
+[2.835s]   /home/csrobot/ros2_ws/src/save_pointcloud/package.xml
+[2.835s]   /home/csrobot/ros2_ws/src/save_pointcloud/build/save_pointcloud/ament_cmake_core/package.cmake)
+[2.835s]   returned error code 1
+[2.836s] Call Stack (most recent call first):
+[2.836s]   /opt/ros/jazzy/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:49 (_ament_package_xml)
+[2.836s]   /opt/ros/jazzy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:220 (ament_package_xml)
+[2.836s]   CMakeLists.txt:20 (rosidl_generate_interfaces)
+[2.836s] 
+[2.836s] [0m
+[2.836s] -- Configuring incomplete, errors occurred!
+[2.845s] gmake: *** [Makefile:1020: cmake_check_build_system] Error 1
+[2.846s] Invoked command in '/home/csrobot/ros2_ws/src/save_pointcloud/build/save_pointcloud' returned '2': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/csrobot/ros2_ws/src/save_pointcloud/build/save_pointcloud -- -j16 -l16

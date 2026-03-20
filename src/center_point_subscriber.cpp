@@ -4,6 +4,9 @@
 #include <pcl/kdtree/kdtree_flann.h>
 #include <pcl/point_types.h>
 #include <cstdlib>
+#include "save_pointcloud/msg/bounding_box_center.hpp"
+#include <pcl/common/common.h>
+#include <pcl/common/point_tests.h>
 
 #define RED     "\033[31m"
 #define GREEN   "\033[32m"
@@ -23,10 +26,10 @@ public:
     CenterPointSubscriber()
         : Node("center_point_subscriber")
     {
-        subscription_ = this->create_subscription<geometry_msgs::msg::Point>(
-            "/center_point",
-            10,
-            std::bind(&CenterPointSubscriber::topic_callback, this, std::placeholders::_1));
+        subscription_ = this->create_subscription<save_pointcloud::msg::BoundingBoxCenter>(
+        "/bbox_center",
+        10,
+        std::bind(&CenterPointSubscriber::topic_callback, this, std::placeholders::_1));
 
         std::string default_pcd_path = std::string(std::getenv("HOME")) + "/Desktop/" + pcd_name;
 
@@ -47,13 +50,20 @@ public:
     }
 
 private:
-    void topic_callback(const geometry_msgs::msg::Point::SharedPtr msg) const
+    rclcpp::Subscription<save_pointcloud::msg::BoundingBoxCenter>::SharedPtr subscription_;
+    pcl::PointCloud<pcl::PointXYZRGB>::Ptr cloud_;
+    pcl::KdTreeFLANN<pcl::PointXYZRGB> kdtree_;
+    void topic_callback(const save_pointcloud::msg::BoundingBoxCenter::SharedPtr msg) const
     {
-        int u = static_cast<int>(msg->x);
-        int v = static_cast<int>(msg->y);
+        int u = static_cast<int>(msg->center.x);
+        int v = static_cast<int>(msg->center.y);
 
         RCLCPP_INFO(this->get_logger(),
             "Received pixel center - u: %d, v: %d", u, v);
+
+        RCLCPP_INFO(this->get_logger(),
+            "Bounding box - x_min: %d y_min: %d x_max: %d y_max: %d",
+            msg->x_min, msg->y_min, msg->x_max, msg->y_max);
 
         if (u < 0 || v < 0 ||
             u >= static_cast<int>(cloud_->width) ||
@@ -64,18 +74,20 @@ private:
         }
 
         const auto & pt = cloud_->at(u, v);
-    RCLCPP_INFO(this->get_logger(),
-    "3D point → X=" CYAN "%.4f" RESET
-    " Y=" CYAN "%.4f" RESET
-    " Z=" CYAN "%.4f" RESET,
-    pt.x, pt.y, pt.z);
+
+        if (!pcl::isFinite(pt))
+        {
+            RCLCPP_WARN(this->get_logger(), "Point at pixel (%d, %d) is invalid", u, v);
+            return;
+        }
+
+        RCLCPP_INFO(this->get_logger(),
+            "3D point → X=" CYAN "%.4f" RESET
+            " Y=" CYAN "%.4f" RESET
+            " Z=" CYAN "%.4f" RESET,
+            pt.x, pt.y, pt.z);
     }
-
-    rclcpp::Subscription<geometry_msgs::msg::Point>::SharedPtr subscription_;
-    pcl::PointCloud<pcl::PointXYZRGB>::Ptr cloud_;
-    pcl::KdTreeFLANN<pcl::PointXYZRGB> kdtree_;
 };
-
 int main(int argc, char * argv[])
 {
     rclcpp::init(argc, argv);
