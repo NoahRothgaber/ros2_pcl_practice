@@ -1,6 +1,0 @@
-{
-  "package_name": "save_pointcloud",
-  "non_idl_tuples": [
-    "/home/csrobot/ros2_ws/src/save_pointcloud:msg/BoundingBoxCenter.msg"
-  ]
-}

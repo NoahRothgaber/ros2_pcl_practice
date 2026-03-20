@@ -1,2 +1,0 @@
-Invoking command in '/home/csrobot/ros2_ws/src/save_pointcloud/build/save_pointcloud': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/csrobot/ros2_ws/src/save_pointcloud -DCMAKE_INSTALL_PREFIX=/home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud
-Invoked command in '/home/csrobot/ros2_ws/src/save_pointcloud/build/save_pointcloud' returned '1': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/csrobot/ros2_ws/src/save_pointcloud -DCMAKE_INSTALL_PREFIX=/home/csrobot/ros2_ws/src/save_pointcloud/install/save_pointcloud
