@@ -90,6 +90,12 @@ install(TARGETS
   DESTINATION lib/${PROJECT_NAME}
 )
 
+install(DIRECTORY
+  launch
+  rviz
+  DESTINATION share/${PROJECT_NAME}
+)
+
 install(PROGRAMS
   scripts/center_point_publisher.py
   DESTINATION lib/${PROJECT_NAME}

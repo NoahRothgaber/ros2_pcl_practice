@@ -1,8 +1,6 @@
 #include "rclcpp/rclcpp.hpp"
-#include "geometry_msgs/msg/point.hpp"
 #include "sensor_msgs/msg/point_cloud2.hpp"
 #include <pcl/io/pcd_io.h>
-#include <pcl/kdtree/kdtree_flann.h>
 #include <pcl/point_types.h>
 #include <pcl_conversions/pcl_conversions.h>
 #include <cstdlib>
@@ -22,33 +20,41 @@ class CenterPointSubscriber : public rclcpp::Node
 {
 public:
     std::string pcd_name = "02_mustard.pcd";
-    // This node subscribes to the center pixel coordinates of the image and looks up the corresponding 3D point in the PCD file.
-    // It also crops the organized point cloud using the bounding box and publishes the cropped cloud.
+
     CenterPointSubscriber()
-        : Node("center_point_subscriber")
+        : Node("center_point_subscriber"), has_cropped_cloud_(false)
     {
         subscription_ = this->create_subscription<save_pointcloud::msg::BoundingBoxCenter>(
             "/bbox_center",
             10,
             std::bind(&CenterPointSubscriber::topic_callback, this, std::placeholders::_1));
 
+        original_cloud_publisher_ = this->create_publisher<sensor_msgs::msg::PointCloud2>(
+            "/original_pointcloud", 10);
+
         cropped_cloud_publisher_ = this->create_publisher<sensor_msgs::msg::PointCloud2>(
-            "/cropped_pointcloud",
-            10);
+            "/cropped_pointcloud", 10);
+
+        original_cloud_timer_ = this->create_wall_timer(
+            std::chrono::seconds(1),
+            std::bind(&CenterPointSubscriber::publish_original_cloud, this));
+
+        cropped_cloud_timer_ = this->create_wall_timer(
+            std::chrono::seconds(1),
+            std::bind(&CenterPointSubscriber::publish_cropped_cloud, this));
 
         std::string default_pcd_path = std::string(std::getenv("HOME")) + "/Desktop/" + pcd_name;
-
         this->declare_parameter<std::string>("pcd_file", default_pcd_path);
         std::string pcd_file = this->get_parameter("pcd_file").as_string();
 
         cloud_ = pcl::PointCloud<pcl::PointXYZRGB>::Ptr(new pcl::PointCloud<pcl::PointXYZRGB>);
+        latest_cropped_cloud_ = pcl::PointCloud<pcl::PointXYZRGB>::Ptr(new pcl::PointCloud<pcl::PointXYZRGB>);
 
         if (pcl::io::loadPCDFile<pcl::PointXYZRGB>(pcd_file, *cloud_) == -1) {
             RCLCPP_ERROR(this->get_logger(), "Couldn't read PCD file: %s", pcd_file.c_str());
             return;
         }
 
-        kdtree_.setInputCloud(cloud_);
         RCLCPP_INFO(this->get_logger(), "Loaded PCD file: %s", pcd_file.c_str());
         RCLCPP_INFO(this->get_logger(), "Loaded PCD file with %zu points", cloud_->size());
         RCLCPP_INFO(this->get_logger(), "Cloud width=%u height=%u", cloud_->width, cloud_->height);
@@ -56,9 +62,42 @@ public:
 
 private:
     rclcpp::Subscription<save_pointcloud::msg::BoundingBoxCenter>::SharedPtr subscription_;
+    rclcpp::Publisher<sensor_msgs::msg::PointCloud2>::SharedPtr original_cloud_publisher_;
     rclcpp::Publisher<sensor_msgs::msg::PointCloud2>::SharedPtr cropped_cloud_publisher_;
+    rclcpp::TimerBase::SharedPtr original_cloud_timer_;
+    rclcpp::TimerBase::SharedPtr cropped_cloud_timer_;
+
     pcl::PointCloud<pcl::PointXYZRGB>::Ptr cloud_;
-    pcl::KdTreeFLANN<pcl::PointXYZRGB> kdtree_;
+    pcl::PointCloud<pcl::PointXYZRGB>::Ptr latest_cropped_cloud_;
+    bool has_cropped_cloud_;
+
+    void publish_original_cloud()
+    {
+        if (!cloud_ || cloud_->empty()) {
+            return;
+        }
+
+        sensor_msgs::msg::PointCloud2 original_msg;
+        pcl::toROSMsg(*cloud_, original_msg);
+        original_msg.header.stamp = this->now();
+        original_msg.header.frame_id = "camera_depth_optical_frame";
+
+        original_cloud_publisher_->publish(original_msg);
+    }
+
+    void publish_cropped_cloud()
+    {
+        if (!has_cropped_cloud_ || !latest_cropped_cloud_ || latest_cropped_cloud_->empty()) {
+            return;
+        }
+
+        sensor_msgs::msg::PointCloud2 cropped_msg;
+        pcl::toROSMsg(*latest_cropped_cloud_, cropped_msg);
+        cropped_msg.header.stamp = this->now();
+        cropped_msg.header.frame_id = "camera_depth_optical_frame";
+
+        cropped_cloud_publisher_->publish(cropped_msg);
+    }
 
     void topic_callback(const save_pointcloud::msg::BoundingBoxCenter::SharedPtr msg)
     {
@@ -71,7 +110,7 @@ private:
         RCLCPP_INFO(this->get_logger(),
             "Bounding box - x_min: %d y_min: %d x_max: %d y_max: %d",
             msg->x_min, msg->y_min, msg->x_max, msg->y_max);
-        // Checking for valid pixel bounds before accessing the point cloud
+
         if (u < 0 || v < 0 ||
             u >= static_cast<int>(cloud_->width) ||
             v >= static_cast<int>(cloud_->height))
@@ -128,13 +167,11 @@ private:
             }
         }
 
-        sensor_msgs::msg::PointCloud2 cropped_msg;
-        pcl::toROSMsg(*cropped_cloud, cropped_msg);
-        cropped_msg.header.stamp = this->now();
-        cropped_msg.header.frame_id = "camera_depth_optical_frame";
-        cropped_cloud_publisher_->publish(cropped_msg);
+        *latest_cropped_cloud_ = *cropped_cloud;
+        has_cropped_cloud_ = true;
+
         RCLCPP_INFO(this->get_logger(),
-            GREEN "Published cropped point cloud" RESET
+            GREEN "Updated cropped point cloud" RESET
             " width=%u height=%u topic=/cropped_pointcloud",
             cropped_cloud->width, cropped_cloud->height);
     }
