@@ -7,6 +7,7 @@ import os
 pkg_share = get_package_share_directory("save_pointcloud")
 rviz_config = os.path.join(pkg_share, "rviz", "pointclouds.rviz")
 
+
 def generate_launch_description():
     cropped_and_original_tf = Node(
         package="tf2_ros",
@@ -16,6 +17,7 @@ def generate_launch_description():
             "0", "0", "0",
             "map", "camera_depth_optical_frame"
         ],
+        output="screen",
     )
 
     base_link_tf = Node(
@@ -26,6 +28,7 @@ def generate_launch_description():
             "0", "0", "0",
             "map", "base_link"
         ],
+        output="screen",
     )
 
     center_point_subscriber = Node(
@@ -37,6 +40,31 @@ def generate_launch_description():
     center_point_publisher = Node(
         package="save_pointcloud",
         executable="center_point_publisher.py",
+        output="screen",
+    )
+
+    passthrough_filter_node = Node(
+        package="save_pointcloud",
+        executable="passthrough_filter_node",
+        name="passthrough_filter_node",
+        parameters=[{
+            "input_topic": "/cropped_pointcloud",
+            "filter_field_name": "z",
+            "limit_min": 0.35,
+            "limit_max": 0.65
+        }],
+        output="screen",
+    )
+
+    filtered_cloud_node = Node(
+        package="save_pointcloud",
+        executable="filtered_cloud_node",
+        name="filtered_cloud_node",
+        parameters=[{
+            "input_topic": "/passthrough_cloud",
+            "distance_threshold": 0.005,
+            "optimize_coefficients": True
+        }],
         output="screen",
     )
 
@@ -52,5 +80,7 @@ def generate_launch_description():
         base_link_tf,
         center_point_subscriber,
         center_point_publisher,
+        passthrough_filter_node,
+        filtered_cloud_node,
         rviz,
     ])
