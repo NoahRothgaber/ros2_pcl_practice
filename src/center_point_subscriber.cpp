@@ -1,5 +1,7 @@
 #include "rclcpp/rclcpp.hpp"
 #include "sensor_msgs/msg/point_cloud2.hpp"
+#include "geometry_msgs/msg/pose_stamped.hpp"
+
 #include <pcl/io/pcd_io.h>
 #include <pcl/point_types.h>
 #include <pcl_conversions/pcl_conversions.h>
@@ -19,7 +21,7 @@
 class CenterPointSubscriber : public rclcpp::Node
 {
 public:
-    std::string pcd_name = "02_mustard.pcd";
+    std::string pcd_name = "05_cheezit_mustard_soup.pcd";
 
     CenterPointSubscriber()
         : Node("center_point_subscriber"), has_cropped_cloud_(false)
@@ -34,6 +36,10 @@ public:
 
         cropped_cloud_publisher_ = this->create_publisher<sensor_msgs::msg::PointCloud2>(
             "/cropped_pointcloud", 10);
+
+        target_pose_publisher_ = this->create_publisher<geometry_msgs::msg::PoseStamped>(
+        "/bbox_target_pose",
+        rclcpp::QoS(1).transient_local().reliable());
 
         original_cloud_timer_ = this->create_wall_timer(
             std::chrono::seconds(1),
@@ -62,8 +68,11 @@ public:
 
 private:
     rclcpp::Subscription<save_pointcloud::msg::BoundingBoxCenter>::SharedPtr subscription_;
+
     rclcpp::Publisher<sensor_msgs::msg::PointCloud2>::SharedPtr original_cloud_publisher_;
     rclcpp::Publisher<sensor_msgs::msg::PointCloud2>::SharedPtr cropped_cloud_publisher_;
+    rclcpp::Publisher<geometry_msgs::msg::PoseStamped>::SharedPtr target_pose_publisher_;
+
     rclcpp::TimerBase::SharedPtr original_cloud_timer_;
     rclcpp::TimerBase::SharedPtr cropped_cloud_timer_;
 
@@ -132,6 +141,19 @@ private:
             " Y=" CYAN "%.4f" RESET
             " Z=" CYAN "%.4f" RESET,
             pt.x, pt.y, pt.z);
+
+        geometry_msgs::msg::PoseStamped target_pose;
+        target_pose.header.stamp = this->now();
+        target_pose.header.frame_id = "camera_depth_optical_frame";
+        target_pose.pose.position.x = pt.x;
+        target_pose.pose.position.y = pt.y;
+        target_pose.pose.position.z = pt.z;
+        target_pose.pose.orientation.w = 1.0;
+
+        target_pose_publisher_->publish(target_pose);
+
+        RCLCPP_INFO(this->get_logger(),
+            "Published 3D target pose to /bbox_target_pose");
 
         int x_min = msg->x_min;
         int y_min = msg->y_min;

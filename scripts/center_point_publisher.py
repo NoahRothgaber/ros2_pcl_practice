@@ -11,7 +11,7 @@ from pathlib import Path
 lower = np.array([20, 80, 80], dtype=np.uint8)
 upper = np.array([35, 255, 255], dtype=np.uint8)
 
-source_path = Path.home() / "Desktop" / "02_mustard.png"
+source_path = Path.home() / "Desktop" / "05_cheezit_mustard_soup.png"
 
 # choose which version to display
 # options: "original", "hsv", "mask", "output"

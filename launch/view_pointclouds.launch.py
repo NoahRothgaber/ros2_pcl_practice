@@ -68,6 +68,29 @@ def generate_launch_description():
         output="screen",
     )
 
+    statistical_outlier_removal_node = Node(
+        package="save_pointcloud",
+        executable="statistical_outlier_removal_node",
+        name="statistical_outlier_removal_node",
+        parameters=[{
+            "input_topic": "/filtered_cloud",
+            "mean_k": 20,
+            "stddev_mul_thresh": 1.0
+        }],
+        output="screen",
+    )
+
+    voxel_grid_filter_node = Node(
+        package="save_pointcloud",
+        executable="voxel_grid_filter_node",
+        name="voxel_grid_filter_node",
+        parameters=[{
+            "input_topic": "/sor_cloud",
+            "leaf_size": 0.005
+        }],
+        output="screen",
+    )
+
     rviz = Node(
         package="rviz2",
         executable="rviz2",
@@ -82,5 +105,7 @@ def generate_launch_description():
         center_point_publisher,
         passthrough_filter_node,
         filtered_cloud_node,
+        statistical_outlier_removal_node,
+        voxel_grid_filter_node,
         rviz,
     ])
